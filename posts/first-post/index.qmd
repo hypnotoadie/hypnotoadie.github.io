@@ -4,7 +4,7 @@ description: "Administrative data is what public-sector researchers work with be
 author: "Aaron Cochran"
 date: 2026-11-08
 categories: [government data, research methods, data quality]
-draft: true
+draft: false
 ---
 
 Most of the research I do in human services runs on administrative data. That isn't because it's the best data for the job. It's because it's the data that exists.

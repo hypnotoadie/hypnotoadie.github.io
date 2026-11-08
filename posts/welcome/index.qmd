@@ -3,7 +3,7 @@ title: "Hello, world"
 description: "Who I am, what I work on, and what you'll find here."
 date: 2026-11-08
 categories: [Technical, Gov data, Off the clock, Neurodivergence]
-draft: true
+draft: false
 ---
 
 Welcome to my personal website. I'm Aaron Cochran, the Research Systems Specialist for Oregon Enterprise Data Analytics (OEDA). OEDA is a shared-services research team within the Office of Performance, Policy and Research (OPPR) at the Oregon Department of Human Services, co-funded by the Oregon Health Authority, so our work serves both agencies.
