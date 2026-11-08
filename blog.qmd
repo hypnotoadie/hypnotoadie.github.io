@@ -1,0 +1,15 @@
+---
+title: "Writing"
+subtitle: "Technical notes, data work inside state government, and the occasional game off the clock."
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: true
+  feed: true
+  date-format: "MMM D, YYYY"
+page-layout: full
+title-block-banner: false
+---

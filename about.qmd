@@ -1,0 +1,27 @@
+---
+title: "About"
+---
+
+I'm Aaron Cochran, the Research Systems Specialist for Oregon Enterprise Data Analytics (OEDA), a shared-services research team within the Office of Performance, Policy and Research (OPPR) at the Oregon Department of Human Services. OEDA is co-funded by the Oregon Health Authority, so our work serves both agencies.
+
+In practice that means I'm part data scientist, part platform administrator. I'm responsible for infrastructure, governance and research tooling: the systems researchers use to do careful work with sensitive data.
+
+## What I work on
+
+- **Research platforms.** Standing up and governing Posit Team on Snowflake — environments, access, promotion workflows and documentation.
+- **Record linkage.** Probabilistic matching and identity resolution across agencies, designed so data can be shared without over-sharing.
+- **Models in production.** Moving models out of notebooks and into versioned, documented APIs with vetiver and plumber.
+
+I work mostly in R (in Positron), with Python alongside, across Snowflake, SQL Server, GitHub, AWS and Azure.
+
+## Off the clock
+
+I run tabletop RPGs, self-host the server my group plays on, and write about it here now and then. I'm also an avid PC gamer, hiker, photographer, and worldbuilder, and a very lucky dad.
+
+## Elsewhere
+
+- GitHub: [hypnotoadie](https://github.com/hypnotoadie)
+- LinkedIn: [aaroncochran](https://www.linkedin.com/in/aaroncochran/)
+- Email: [get in touch](contact.qmd)
+
+*Views on this site are my own and not those of my employer.*

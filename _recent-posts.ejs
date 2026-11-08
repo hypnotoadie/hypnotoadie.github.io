@@ -1,0 +1,14 @@
+<ul class="ac-posts list">
+<% for (const item of items) { %>
+  <li <%= metadataAttrs(item) %>>
+    <a href="<%- item.path %>">
+      <span class="ac-post-track"><%= (item.categories && item.categories.length) ? item.categories[0] : 'Notes' %></span>
+      <span class="ac-post-main">
+        <span class="ac-post-title"><%= item.title %></span>
+        <% if (item.description) { %><span class="ac-post-blurb"><%= item.description %></span><% } %>
+      </span>
+      <span class="ac-post-date"><%= item.date %> <span aria-hidden="true">↗</span></span>
+    </a>
+  </li>
+<% } %>
+</ul>

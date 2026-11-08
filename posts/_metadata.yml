@@ -1,0 +1,6 @@
+# Shared options for every post
+author: "Aaron Cochran"
+toc: true
+title-block-banner: false
+# Keep code output from earlier renders so posts don't re-run on every build
+freeze: true

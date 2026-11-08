@@ -1,0 +1,34 @@
+/*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+// Palette — dark (default)
+$ac-bg: #0E1116;
+$ac-surface: #13171E;
+$ac-ink: #ECEAE3;
+$ac-pitch: #C9CFD6;
+$ac-soft: #B8BFC8;
+$ac-muted: #9BA3AE;
+$ac-line: #232A33;
+$ac-line2: #2E3640;
+$ac-line3: #3A434E;
+$ac-accent: #C6F432;   // chartreuse
+$ac-on-accent: #0E1116;
+
+// Bootstrap / Quarto mappings
+$body-bg: $ac-bg;
+$body-color: $ac-ink;
+$link-color: $ac-accent;
+$border-color: $ac-line;
+$navbar-bg: $ac-bg;
+$navbar-fg: $ac-soft;
+$navbar-hl: $ac-ink;
+$footer-bg: $ac-bg;
+$footer-fg: $ac-muted;
+$code-block-bg: $ac-surface;
+$code-color: $ac-accent;
+$input-bg: $ac-surface;
+
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+$headings-font-family: "Space Grotesk", "Inter", sans-serif;
+$font-family-monospace: "JetBrains Mono", ui-monospace, monospace;
+$font-size-root: 17px;

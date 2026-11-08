@@ -1,0 +1,20 @@
+---
+title: "Contact"
+---
+
+I'm always happy to talk about public-sector data work, Posit and Snowflake platforms, record linkage, or anything I've written here.
+
+```{=html}
+<p>
+  <button type="button" class="ac-btn ac-btn-primary" data-ac-contact aria-expanded="false" aria-controls="ac-contact-page">Show my email address <span aria-hidden="true">→</span></button>
+</p>
+<div class="ac-contact-panel" id="ac-contact-page" hidden>
+  <div class="ac-contact-copy">
+    <p class="ac-contact-title">Say hello</p>
+    <p>Email is the best way to reach me.</p>
+  </div>
+  <a class="ac-btn ac-mail" data-ac-mail href="#">…</a>
+</div>
+```
+
+You can also find me on [GitHub](https://github.com/hypnotoadie) and [LinkedIn](https://www.linkedin.com/in/aaroncochran/).

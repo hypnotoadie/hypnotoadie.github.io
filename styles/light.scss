@@ -1,0 +1,35 @@
+/*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+// Palette — light ("field notes" paper with an olive accent;
+// chartreuse is unreadable on light backgrounds)
+$ac-bg: #F4F1EA;
+$ac-surface: #FBF9F4;
+$ac-ink: #1B1F1D;
+$ac-pitch: #3E4440;
+$ac-soft: #4F5550;
+$ac-muted: #5C625D;
+$ac-line: #DDD7CB;
+$ac-line2: #CFC8BA;
+$ac-line3: #BDB5A6;
+$ac-accent: #3F6212;   // deep olive
+$ac-on-accent: #FFFFFF;
+
+// Bootstrap / Quarto mappings
+$body-bg: $ac-bg;
+$body-color: $ac-ink;
+$link-color: $ac-accent;
+$border-color: $ac-line;
+$navbar-bg: $ac-bg;
+$navbar-fg: $ac-soft;
+$navbar-hl: $ac-ink;
+$footer-bg: $ac-bg;
+$footer-fg: $ac-muted;
+$code-block-bg: $ac-surface;
+$code-color: $ac-accent;
+$input-bg: $ac-surface;
+
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+$headings-font-family: "Space Grotesk", "Inter", sans-serif;
+$font-family-monospace: "JetBrains Mono", ui-monospace, monospace;
+$font-size-root: 17px;

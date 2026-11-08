@@ -1,0 +1,24 @@
+<script>
+// Reveal-on-click email: the address is never present in the page source
+// as one string, which keeps most scrapers from harvesting it.
+(function () {
+  var user = ['aaron', 'c', 'cochran'].join('.');
+  var host = ['gmail', 'com'].join('.');
+  function fill() {
+    var addr = user + '@' + host;
+    document.querySelectorAll('[data-ac-mail]').forEach(function (a) {
+      a.href = 'mailto:' + addr;
+      a.textContent = addr;
+    });
+  }
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('[data-ac-contact]');
+    if (!btn) return;
+    var panel = document.getElementById(btn.getAttribute('aria-controls'));
+    if (!panel) return;
+    var open = panel.hasAttribute('hidden');
+    if (open) { fill(); panel.removeAttribute('hidden'); } else { panel.setAttribute('hidden', ''); }
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+})();
+</script>

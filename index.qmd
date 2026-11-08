@@ -1,0 +1,121 @@
+---
+pagetitle: "Aaron Cochran"
+description: "Research Systems Specialist building data platforms, pipelines and guardrails for public-sector research."
+page-layout: custom
+listing:
+  id: recent-posts
+  contents: posts
+  sort: "date desc"
+  max-items: 4
+  template: _recent-posts.ejs
+  date-format: "MMM D, YYYY"
+---
+
+```{=html}
+<section class="ac-wrap ac-hero" id="top">
+  <div class="ac-hero-text">
+    <p class="ac-status">
+      <span class="ac-live">● available for conversations</span>
+      <span>Oregon, USA · UTC−8</span>
+    </p>
+    <h1 class="ac-name">Aaron<br>Cochran<span class="ac-dot">.</span></h1>
+    <p class="ac-pitch">I build the platforms, pipelines and guardrails that let public-sector researchers do careful work with sensitive data — in R, Python, Snowflake and Posit Team.</p>
+    <div class="ac-ctas">
+      <a class="ac-btn ac-btn-primary" href="blog.html">Read the blog <span aria-hidden="true">→</span></a>
+      <a class="ac-btn" href="https://github.com/hypnotoadie">github.com/hypnotoadie <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+
+  <div class="ac-link-card">
+    <div class="ac-link-head"><span>source_a</span><span>match</span><span>source_b</span></div>
+    <svg aria-hidden="true" viewBox="0 0 380 220">
+      <circle class="lk-dot-off" cx="20" cy="110" r="6"/><circle class="lk-dot-off" cx="360" cy="110" r="6"/>
+      <path class="lk-line" d="M26 20 C 190 20, 190 65, 354 65"/>
+      <path class="lk-line" d="M26 65 C 190 65, 190 155, 354 155"/>
+      <path class="lk-line" d="M26 155 C 190 155, 190 20, 354 20"/>
+      <path class="lk-line" d="M26 200 C 190 200, 190 200, 354 200"/>
+      <path class="lk-miss" d="M26 110 C 190 110, 190 110, 354 110"/>
+      <g class="lk-dot-on">
+        <circle cx="20" cy="20" r="6"/><circle cx="20" cy="65" r="6"/><circle cx="20" cy="155" r="6"/><circle cx="20" cy="200" r="6"/>
+        <circle cx="360" cy="20" r="6"/><circle cx="360" cy="65" r="6"/><circle cx="360" cy="155" r="6"/><circle cx="360" cy="200" r="6"/>
+      </g>
+    </svg>
+    <p>Most of my work is connecting things that weren't designed to connect — systems, agencies, datasets, people — without losing track of who's allowed to see what.</p>
+  </div>
+</section>
+
+<section class="ac-stack" aria-label="Tools I work with">
+  <ul class="ac-wrap">
+    <li class="ac-stack-label">stack →</li>
+    <li>R</li><li>Python</li><li>Snowflake</li><li>Posit Team</li><li>Quarto</li><li>SQL Server</li><li>AWS</li><li>Azure</li><li>GitHub</li>
+  </ul>
+</section>
+
+<section class="ac-wrap ac-section" id="work">
+  <div class="ac-section-head">
+    <h2>What I work on</h2>
+    <p>Research Systems Specialist at the Oregon Department of Human Services — part data scientist, part platform admin.</p>
+  </div>
+  <div class="ac-cards">
+    <article class="ac-card">
+      <span class="ac-num">01</span>
+      <h3>Research platforms</h3>
+      <p>Standing up and governing Posit Team on Snowflake — environments, access, promotion workflows and the docs that make them usable.</p>
+    </article>
+    <article class="ac-card">
+      <span class="ac-num">02</span>
+      <h3>Record linkage</h3>
+      <p>Probabilistic matching and identity resolution across agencies, designed so data can be shared without over-sharing.</p>
+    </article>
+    <article class="ac-card">
+      <span class="ac-num">03</span>
+      <h3>Models in production</h3>
+      <p>Taking models out of notebooks and into versioned, documented APIs with vetiver and plumber.</p>
+    </article>
+  </div>
+</section>
+
+<section class="ac-wrap ac-section" id="writing">
+  <div class="ac-section-head">
+    <h2>Writing</h2>
+    <p>Technical notes, data work inside state government, navigating the world as a neurodivergent adult, and the occasional game off the clock.</p>
+  </div>
+```
+
+:::{#recent-posts}
+:::
+
+```{=html}
+  <a class="ac-all-posts" href="blog.html">All posts <span aria-hidden="true">→</span></a>
+</section>
+
+<section class="ac-about-band" id="about">
+  <div class="ac-wrap ac-about">
+    <p class="ac-thesis">Government data work is mostly <em>trust work</em>. The tooling is how you earn it.</p>
+    <div class="ac-about-body">
+      <p>I'm part of Oregon Enterprise Data Analytics, a shared-services research team within ODHS's Office of Performance, Policy and Research, co-funded by the Oregon Health Authority. My job sits between infrastructure, governance and research tooling.</p>
+      <p>Here I write about that work, about what it's like doing data inside state government, and occasionally about neurodivergence and the tabletop games I run on the side.</p>
+      <a href="about.html">More about me <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="ac-wrap" id="contact">
+  <div class="ac-signoff">
+    <p class="ac-signoff-text">Let's talk data<span>.</span></p>
+    <ul>
+      <li><a class="ac-btn" href="https://github.com/hypnotoadie">GitHub ↗</a></li>
+      <li><a class="ac-btn" href="https://www.linkedin.com/in/aaroncochran/">LinkedIn ↗</a></li>
+      <li><a class="ac-btn" href="blog.xml">RSS</a></li>
+      <li><button type="button" class="ac-btn ac-btn-primary" data-ac-contact aria-expanded="false" aria-controls="ac-contact-home">Contact me <span aria-hidden="true">→</span></button></li>
+    </ul>
+  </div>
+  <div class="ac-contact-panel" id="ac-contact-home" hidden>
+    <div class="ac-contact-copy">
+      <p class="ac-contact-title">Say hello</p>
+      <p>Questions about public-sector data work, Posit, or something I wrote? Email is the best way to reach me.</p>
+    </div>
+    <a class="ac-btn ac-mail" data-ac-mail href="#">…</a>
+  </div>
+</section>
+```
