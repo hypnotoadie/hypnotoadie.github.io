@@ -1,0 +1,119 @@
+---
+title: "From \"Can We Share?\" to \"How Can We Share Safely?\""
+description: "Cross-agency data sharing in government is rarely blocked by technology. It's blocked by unclear ownership, legal folklore, and incentives that reward saying no. Here's what it would take to change that."
+author: "Aaron Cochran"
+date: 2026-11-08
+categories: [government data, data sharing, data governance]
+draft: true
+---
+
+People who rely on state government services rarely deal with just one agency. A family might get food assistance from one, health coverage from another, and housing support from a third, while their kids attend schools overseen by a fourth. Every one of those agencies holds part of the picture. Almost none of them can see the rest.
+
+If you want to know whether a housing program reduces emergency room visits, or whether family economic support improves school outcomes, you need data from more than one agency. In my experience, getting it is one of the hardest things in public-sector research. Not because the technology is hard, but because nearly everything else is.
+
+## How data sharing actually happens
+
+When cross-agency data sharing works, it's usually because someone with authority told everyone to make it work.
+
+The most successful effort I've been part of was a statewide homelessness initiative directed from the governor's office. Several agencies were expected to share data, and they did. Agreements got written, data moved, and analysts across agencies worked together on questions no single agency could answer alone. It was a good example of what's possible.
+
+But it worked because leadership spent political capital to make it happen. Without that push, the default is caution. Each agency asks what could go wrong if it shares, and nobody asks what goes wrong if it doesn't.
+
+That asymmetry is the core problem. The incentives in government data sharing almost all point toward saying no.
+
+## The incentives reward "no"
+
+Think about it from the point of view of a data steward, a program manager, or an agency lawyer:
+
+- If they approve a data share and something goes wrong — a breach, a misused record, an embarrassing news story — they are accountable.
+- If they decline and a valuable analysis never happens, nobody notices. There is no headline about the research that wasn't done or the program improvement that never came.
+
+Given that, risk aversion isn't a character flaw. It's a rational response to how accountability works. Legal counsel in particular is trained and evaluated on preventing harm to the agency, and "we didn't share" is almost never a source of harm they will be blamed for.
+
+The result is a system that is very good at protecting data and very bad at using it.
+
+## Legal folklore
+
+Some barriers to sharing are real legal requirements. Many aren't. Over time, every agency builds up what I think of as *legal folklore*: restrictions that get repeated so often they're treated as law, even though nobody can point to the statute or regulation behind them.
+
+Legal folklore tends to look like this:
+
+- A federal privacy law is cited as a blanket prohibition when it actually includes specific provisions for research and evaluation.
+- A restriction comes from a program rule, an internal policy, or someone's memory of how things were done years ago, not from statute.
+- The answer to "can we share this?" changes depending on who you ask.
+
+That last one is the clearest sign of folklore. Statutes don't change from one conversation to the next. Interpretations do.
+
+### FERPA as an example
+
+The Family Educational Rights and Privacy Act (FERPA) is one of the laws most often cited as a reason not to share education data, and it's a useful example because it's often treated as stricter than it is.
+
+FERPA does restrict disclosure of student records. But it also includes exceptions written for exactly the kind of work public-sector researchers do. The **studies exception** allows disclosure, under a written agreement, for studies done for or on behalf of education agencies to develop or validate tests, administer student aid, or improve instruction. The **audit or evaluation exception** allows disclosure to authorized representatives evaluating federal- or state-supported education programs. The U.S. Department of Education publishes guidance on both, including what the written agreements need to contain.
+
+I've seen FERPA cited as the reason longitudinal education data couldn't be shared with a research team even when improving instruction was explicitly one of the study's goals. That's the kind of purpose the studies exception describes. The law wasn't the barrier. The interpretation was.
+
+## Aligning with the intent of the law
+
+None of this is an argument for bending or breaking privacy law. Those laws exist for good reasons, and the people they protect deserve that protection.
+
+It's an argument for reading the law in light of what it was meant to do. Most privacy laws aim to protect people from inappropriate disclosure, not to stop agencies from understanding whether their programs help those same people. When a proposed share is structured carefully — limited data, a defined purpose, strong security, a written agreement — it's often well within both the letter and the spirit of the law.
+
+That takes some creative thinking. Agencies are often interested in more outcomes than their first answer suggests. A study framed as "social services research" might also produce findings on attendance, instruction, or student support that directly serve the education agency's own mission. Finding that overlap, and building the request around it, is often what turns a no into a yes.
+
+## Who decides?
+
+Underneath many of these problems is a simpler one: it's often unclear who has the authority to say yes.
+
+In a typical agency, data sharing touches several roles:
+
+- **Data stewards** or system owners who understand the data
+- **Program leadership** who understand the purpose and the politics
+- **Privacy and security staff** who understand the risks
+- **Legal counsel** who interpret the law
+- **Executive leadership** who own the agency's priorities
+
+When these roles aren't clearly defined, any one of them can act as a veto, and none of them owns getting to yes. Requests bounce between offices. Each review adds new questions. Months go by.
+
+Agency directors are in the best position to fix this, because they own the data in a way no one else does. When leadership treats data as an agency asset meant to serve the public, rather than something each program guards on its own, sharing between internal silos and across agencies gets much easier.
+
+## It matters who's in the chair
+
+Because so much depends on interpretation, data sharing is unusually sensitive to who holds key positions.
+
+I've seen a partner agency go from broad, productive data sharing under one research leader to almost none under his successor. The law didn't change. The data didn't change. The interpretation did. Years of collaboration ended in a matter of weeks.
+
+That's fragile, and it's why champions matter. Every successful data-sharing effort I've seen had at least one person inside the agency who understood the value of the work and was willing to advocate for it. Building a critical mass of those champions, across programs, legal, and leadership, is how culture changes over time. When sharing depends on one person, it ends when they leave. When it depends on shared expectations and clear policy, it lasts.
+
+## The technology is the easy part
+
+This might seem backwards, but the technical side of secure data sharing is largely solved.
+
+Modern data platforms such as Snowflake give agencies controls that used to be expensive or impossible:
+
+- **Column-level security and masking**, so analysts see only the fields they're approved for
+- **Row-level access policies**, so each agency or project sees only the records it should
+- **Secure views and data sharing**, so data can be queried in place instead of copied and emailed
+- **Audit logging**, so every query and every access is recorded
+
+These tools let agencies move past an all-or-nothing choice. The question doesn't have to be "do we hand over this dataset?" It can be "which fields, for which records, for which approved purpose, with what monitoring?"
+
+So the barriers fall into three categories, roughly in order of difficulty:
+
+1. **Technical barriers** are solvable, and mostly solved.
+2. **Policy barriers** are solvable, but take time and political capital.
+3. **People barriers** are the hardest, because they require culture change and visible support from leadership.
+
+Most effort and investment goes to the first category. Most of the real problems are in the second and third.
+
+## What would help
+
+If I could change a few things, I'd start here:
+
+1. **Change the default question.** Treat "how can we share this safely?" as the starting point for any request with a legitimate public purpose, not "can we share this?"
+2. **Define who has authority.** Make it clear who can approve data sharing, who advises, and who has the final say, so requests don't drift between offices.
+3. **Make sharing the expectation, with refusal requiring a reason.** Standing memorandums of understanding between agencies can establish that data will be shared for approved purposes, and that declining requires a specific, documented legal or policy basis.
+4. **Ask for the citation.** When a request is denied on legal grounds, the denial should name the statute or rule. That simple habit separates real legal limits from folklore.
+5. **Staff it.** Data sharing takes work: agreements, data preparation, security review, ongoing coordination. Fund dedicated roles for it so it doesn't compete with everyone's day job.
+6. **Build champions.** Find the people in each agency who see the value, connect them, and give them support.
+
+People who use public services don't experience government as separate agencies. They experience it as one system that should be able to learn from itself. Getting there won't take a new technology. It will take clarity, leadership, and a willingness to ask a different question.

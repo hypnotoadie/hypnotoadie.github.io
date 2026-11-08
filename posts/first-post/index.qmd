@@ -1,0 +1,89 @@
+---
+title: "Data Isn't Free: The Gap Between the Data We Have and the Data We Need"
+description: "Administrative data is what public-sector researchers work with because it exists, not because it answers our questions. Closing that gap starts with being honest about what purposeful data collection costs."
+author: "Aaron Cochran"
+date: 2026-11-08
+categories: [government data, research methods, data quality]
+draft: true
+---
+
+Most of the research I do in human services runs on administrative data. That isn't because it's the best data for the job. It's because it's the data that exists.
+
+Administrative data is a byproduct of running a program. Someone applies for benefits, a caseworker determines eligibility, a payment goes out, a case closes. Each step leaves a record, and those records pile up into a large, longitudinal, often linkable dataset that researchers like me are grateful to have. But none of it was collected to answer research questions. It was collected to run the program and to show the federal government that the program follows the rules.
+
+That difference matters more than people expect.
+
+## What administrative data is built to answer
+
+Benefit programs like SNAP and TANF, and services like child welfare, carry heavy federal reporting requirements. Those requirements largely decide what gets recorded, how it's defined, and how carefully it's checked. If a field feeds a federal report, it tends to be well defined and fairly complete. If it doesn't, it may be optional, free text, inconsistently used, or missing entirely.
+
+So administrative data is very good at questions like:
+
+- How many people were served, and for how long?
+- Were eligibility decisions made on time?
+- How much was paid out, and to whom?
+
+It is much weaker at the questions programs care about most:
+
+- Are families more economically stable a year after they leave the program?
+- Did a new service improve child well-being, or only shift when cases close?
+- Which parts of the program make a difference, and for whom?
+
+These outcome questions often depend on things the system never captures: someone's wellbeing, the stability of their housing, their experience with the program, what happened after they left. You can't analyze a variable that was never recorded.
+
+## What quasi-experimental methods can and can't do
+
+When a randomized trial isn't possible, which in public programs is most of the time, we turn to quasi-experimental designs: difference-in-differences, regression discontinuity, propensity score methods, interrupted time series, and similar tools. I use them often, and they are powerful. Applied carefully, they can get much closer to a causal estimate than a simple before-and-after comparison.
+
+But they have limits that no amount of statistical skill removes:
+
+- **They can only estimate effects on outcomes that were measured.** If the outcome a program cares about isn't in the data, no design recovers it.
+- **They depend on assumptions the data can't always test.** Parallel trends, no unmeasured confounding, a clean cutoff. Administrative data rarely holds the variables we'd need to check those assumptions properly.
+- **They inherit every quality problem in the source data.** A sophisticated model built on inconsistent records gives a precise-looking answer to a fuzzy question.
+
+Quasi-experimental methods help us get the most out of the data we have. They don't replace data that was collected on purpose to answer a specific question.
+
+## Purposeful data collection has real costs
+
+When a program wants to know whether it's working, the natural next step is to collect new data: a survey, interviews, focus groups, a structured intake form. This is often the right move. What gets underestimated, almost everywhere in government, is what doing it well costs.
+
+Good data collection needs:
+
+- **Planning.** Defining the question, deciding what to measure, choosing a sample, and working out how the data will be analyzed *before* anything is collected. This is the step that most often gets skipped, and skipping it is the main reason surveys end up measuring satisfaction when the real question was impact.
+- **Instrument design.** Writing survey questions that are clear, unbiased, and actually measure the concept you care about takes training and testing. A question that seems obvious to the person writing it can mean three different things to respondents.
+- **Privacy and ethics review.** Human services data is sensitive. Consent, data sharing agreements, and protections for participants all take time and expertise.
+- **Staffing.** Someone has to recruit participants, follow up on non-response, manage the data, and analyze it. Qualitative work needs even more: facilitators, note-takers, transcription, and careful coding by people trained to do it.
+- **Infrastructure.** Data needs to be captured in systems that validate entries, restrict access, track changes, and connect to the rest of the analytic environment.
+
+None of this is exotic. It's standard research practice. It just isn't free, and it rarely appears in a program's budget.
+
+## The spreadsheet problem
+
+When the infrastructure isn't there, people make do. Across government, a lot of program-level data collection happens in Excel. That isn't carelessness. It's what's available, it's familiar, and it gets the job done in the moment.
+
+But spreadsheets weren't designed for data collection. There's no validation on entry, so a date ends up typed three different ways. There's no controlled vocabulary, so one category shows up under five spellings. Files get copied, renamed, and emailed around, so no one is sure which version is current. Columns change meaning partway through a year. By the time the data reaches an analyst, a large share of the effort goes into cleaning it, and some errors can't be fixed because the information needed to fix them was never captured.
+
+These are system problems, not people problems. Give the same staff a well-designed form with validation and a shared database, and data quality improves right away.
+
+## Why this keeps happening
+
+It's easy to read all of this as a criticism of the people doing the work. It isn't. The program staff I work with care a great deal about the families they serve and want to know whether what they're doing helps. The constraints are structural:
+
+- **Funding follows compliance.** Federal requirements come with deadlines and consequences. Evaluation usually doesn't, so it's often the first thing cut when budgets tighten.
+- **Data collection is treated as overhead.** It's rarely budgeted as part of running a program, so it competes with direct services, and direct services almost always win.
+- **Staff capacity is stretched thin.** Teams running programs are often already at or past capacity. Designing and running a rigorous data collection effort on top of that isn't realistic without dedicated support.
+- **Research methods training isn't part of most program roles.** That's reasonable. We don't expect researchers to be eligibility experts either. But it means survey design and measurement often fall to people who were never given the tools for it.
+
+The result is a system very good at counting what it does and much less able to learn whether it's working.
+
+## What would help
+
+I don't think the answer is a large new research operation in every program. Some smaller shifts would go a long way:
+
+1. **Start with the question.** Before collecting anything, write down what decision the data will inform and what you'd need to know to make it.
+2. **Bring research staff in early.** An hour of consultation during design saves weeks of cleaning and reanalysis later, and can mean the difference between data that answers the question and data that can't.
+3. **Budget for data collection as part of the program.** If an outcome matters enough to ask about, it matters enough to fund measuring it properly, including staff time and infrastructure.
+4. **Collect less, but on purpose.** A short, well-designed instrument that measures the right outcome beats a long survey that measures everything loosely.
+5. **Invest in shared infrastructure.** Validated forms, secure databases, and standard definitions benefit every program that uses them and make each new collection cheaper than the last.
+
+Administrative data will always be the backbone of public-sector research, and it should be. It's comprehensive, longitudinal, and already paid for. But if we want to know whether programs are actually improving people's lives, we have to be willing to collect the data that question requires, and be honest about what that takes.
