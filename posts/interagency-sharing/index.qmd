@@ -84,26 +84,45 @@ I've seen a partner agency go from broad, productive data sharing under one rese
 
 That's fragile, and it's why champions matter. Every successful data-sharing effort I've seen had at least one person inside the agency who understood the value of the work and was willing to advocate for it. Building a critical mass of those champions, across programs, legal, and leadership, is how culture changes over time. When sharing depends on one person, it ends when they leave. When it depends on shared expectations and clear policy, it lasts.
 
-## The technology is the easy part
+## The technology is the easier part
 
-This might seem backwards, but the technical side of secure data sharing is largely solved.
+The good news first. The technical side of sharing sensitive data safely is largely solved, at least on paper.
 
-Modern data platforms such as Snowflake give agencies controls that used to be expensive or impossible:
+Modern data platforms give agencies controls that used to be expensive or impossible to build:
 
 - **Column-level security and masking**, so analysts see only the fields they're approved for
 - **Row-level access policies**, so each agency or project sees only the records it should
-- **Secure views and data sharing**, so data can be queried in place instead of copied and emailed
+- **Querying data in place**, so data doesn't have to be copied and emailed
 - **Audit logging**, so every query and every access is recorded
 
-These tools let agencies move past an all-or-nothing choice. The question doesn't have to be "do we hand over this dataset?" It can be "which fields, for which records, for which approved purpose, with what monitoring?"
+These features are common across cloud data warehouses, and some of them exist in database systems many agencies already run. SQL Server, for example, supports row-level security and dynamic data masking.
 
-So the barriers fall into three categories, roughly in order of difficulty:
+Tools like these change the question. It doesn't have to be "do we hand over this dataset?" It can be "which fields, for which records, for which approved purpose, with what monitoring?"
 
-1. **Technical barriers** are solvable, and mostly solved.
+But "solved" is carrying a lot of weight in that sentence. A tool that exists is not the same as a tool an agency has.
+
+### Solved isn't the same as available
+
+Many agencies, and many teams within them, don't have this infrastructure. The reasons are mostly not technical.
+
+- **Cost.** Licenses, cloud compute, and the people to run them compete with direct services in a tight budget. A data platform is a hard sell next to frontline positions.
+- **Procurement.** Buying software in government means justifications, security reviews, contract vehicles, and sometimes competitive bids. Timelines run in quarters or years. By the time a tool is approved, the project that needed it may be over.
+- **IT approvals.** Even after purchase, a tool has to clear security and architecture review and be connected to identity systems and networks. Central IT teams are often stretched thin and, reasonably, cautious. Research needs are rarely at the top of their queue.
+- **Skills and staffing.** Fine-grained access controls are only as good as the people who set them up and maintain them. Someone has to translate a data-sharing agreement into actual row policies and masking rules, and keep them current as the agreement changes.
+
+So in practice, a lot of data still moves the old way: extracts over secure file transfer, encrypted spreadsheets, a shared folder with folder-level permissions. Those methods aren't reckless. They're what's available. But they push every decision back to all-or-nothing, and all-or-nothing makes careful people more careful.
+
+The gap is uneven, too. When one agency has modern infrastructure and its partner doesn't, the better-equipped agency either absorbs the cost of hosting or the arrangement falls back to the least capable system involved.
+
+### Where that leaves the barriers
+
+I'd still rank the barriers in the same order, with a caveat on the first one:
+
+1. **Technical barriers** are solvable, and the tools exist. Getting them in place is a budget, procurement, and IT-capacity problem, which makes it partly a policy problem.
 2. **Policy barriers** are solvable, but take time and political capital.
 3. **People barriers** are the hardest, because they require culture change and visible support from leadership.
 
-Most effort and investment goes to the first category. Most of the real problems are in the second and third.
+Technology still isn't the hardest part. But "use a modern platform" isn't advice most agencies can act on next month, and pretending otherwise skips over why so much sharing still happens one file transfer at a time.
 
 ## What would help
 
@@ -115,5 +134,6 @@ If I could change a few things, I'd start here:
 4. **Ask for the citation.** When a request is denied on legal grounds, the denial should name the statute or rule. That simple habit separates real legal limits from folklore.
 5. **Staff it.** Data sharing takes work: agreements, data preparation, security review, ongoing coordination. Fund dedicated roles for it so it doesn't compete with everyone's day job.
 6. **Build champions.** Find the people in each agency who see the value, connect them, and give them support.
+7. **Fund shared infrastructure.** Not every agency needs to buy and run its own platform. A shared, centrally governed environment, with access controls built for multi-agency work, lowers the cost of entry for the agencies that can least afford it.
 
 People who use public services don't experience government as separate agencies. They experience it as one system that should be able to learn from itself. Getting there won't take a new technology. It will take clarity, leadership, and a willingness to ask a different question.
