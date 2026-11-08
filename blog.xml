@@ -10,6 +10,144 @@
 <atom:link href="https://hypnotoadie.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Data infrastructure, governance and research tooling in state government — plus the occasional tabletop game.</description>
 <generator>quarto-1.11.9</generator>
-<lastBuildDate>Sun, 08 Nov 2026 22:49:51 GMT</lastBuildDate>
+<lastBuildDate>Sun, 08 Nov 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Data Isn’t Free: The Gap Between the Data We Have and the Data We Need</title>
+  <dc:creator>Aaron Cochran</dc:creator>
+  <link>https://hypnotoadie.github.io/posts/first-post/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Most of the research I do in human services runs on administrative data. That isn’t because it’s the best data for the job. It’s because it’s the data that exists.</p>
+<p>Administrative data is a byproduct of running a program. Someone applies for benefits, a caseworker determines eligibility, a payment goes out, a case closes. Each step leaves a record, and those records pile up into a large, longitudinal, often linkable dataset that researchers like me are grateful to have. But none of it was collected to answer research questions. It was collected to run the program and to show the federal government that the program follows the rules.</p>
+<p>That difference matters more than people expect.</p>
+<section id="what-administrative-data-is-built-to-answer" class="level2">
+<h2 class="anchored" data-anchor-id="what-administrative-data-is-built-to-answer">What administrative data is built to answer</h2>
+<p>Benefit programs like SNAP and TANF, and services like child welfare, carry heavy federal reporting requirements. Those requirements largely decide what gets recorded, how it’s defined, and how carefully it’s checked. If a field feeds a federal report, it tends to be well defined and fairly complete. If it doesn’t, it may be optional, free text, inconsistently used, or missing entirely.</p>
+<p>So administrative data is very good at questions like:</p>
+<ul>
+<li>How many people were served, and for how long?</li>
+<li>Were eligibility decisions made on time?</li>
+<li>How much was paid out, and to whom?</li>
+</ul>
+<p>It is much weaker at the questions programs care about most:</p>
+<ul>
+<li>Are families more economically stable a year after they leave the program?</li>
+<li>Did a new service improve child well-being, or only shift when cases close?</li>
+<li>Which parts of the program make a difference, and for whom?</li>
+</ul>
+<p>These outcome questions often depend on things the system never captures: someone’s wellbeing, the stability of their housing, their experience with the program, what happened after they left. You can’t analyze a variable that was never recorded.</p>
+</section>
+<section id="what-quasi-experimental-methods-can-and-cant-do" class="level2">
+<h2 class="anchored" data-anchor-id="what-quasi-experimental-methods-can-and-cant-do">What quasi-experimental methods can and can’t do</h2>
+<p>When a randomized trial isn’t possible, which in public programs is most of the time, we turn to quasi-experimental designs: difference-in-differences, regression discontinuity, propensity score methods, interrupted time series, and similar tools. I use them often, and they are powerful. Applied carefully, they can get much closer to a causal estimate than a simple before-and-after comparison.</p>
+<p>But they have limits that no amount of statistical skill removes:</p>
+<ul>
+<li><strong>They can only estimate effects on outcomes that were measured.</strong> If the outcome a program cares about isn’t in the data, no design recovers it.</li>
+<li><strong>They depend on assumptions the data can’t always test.</strong> Parallel trends, no unmeasured confounding, a clean cutoff. Administrative data rarely holds the variables we’d need to check those assumptions properly.</li>
+<li><strong>They inherit every quality problem in the source data.</strong> A sophisticated model built on inconsistent records gives a precise-looking answer to a fuzzy question.</li>
+</ul>
+<p>Quasi-experimental methods help us get the most out of the data we have. They don’t replace data that was collected on purpose to answer a specific question.</p>
+</section>
+<section id="purposeful-data-collection-has-real-costs" class="level2">
+<h2 class="anchored" data-anchor-id="purposeful-data-collection-has-real-costs">Purposeful data collection has real costs</h2>
+<p>When a program wants to know whether it’s working, the natural next step is to collect new data: a survey, interviews, focus groups, a structured intake form. This is often the right move. What gets underestimated, almost everywhere in government, is what doing it well costs.</p>
+<p>Good data collection needs:</p>
+<ul>
+<li><strong>Planning.</strong> Defining the question, deciding what to measure, choosing a sample, and working out how the data will be analyzed <em>before</em> anything is collected. This is the step that most often gets skipped, and skipping it is the main reason surveys end up measuring satisfaction when the real question was impact.</li>
+<li><strong>Instrument design.</strong> Writing survey questions that are clear, unbiased, and actually measure the concept you care about takes training and testing. A question that seems obvious to the person writing it can mean three different things to respondents.</li>
+<li><strong>Privacy and ethics review.</strong> Human services data is sensitive. Consent, data sharing agreements, and protections for participants all take time and expertise.</li>
+<li><strong>Staffing.</strong> Someone has to recruit participants, follow up on non-response, manage the data, and analyze it. Qualitative work needs even more: facilitators, note-takers, transcription, and careful coding by people trained to do it.</li>
+<li><strong>Infrastructure.</strong> Data needs to be captured in systems that validate entries, restrict access, track changes, and connect to the rest of the analytic environment.</li>
+</ul>
+<p>None of this is exotic. It’s standard research practice. It just isn’t free, and it rarely appears in a program’s budget.</p>
+</section>
+<section id="the-spreadsheet-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-spreadsheet-problem">The spreadsheet problem</h2>
+<p>When the infrastructure isn’t there, people make do. Across government, a lot of program-level data collection happens in Excel. That isn’t carelessness. It’s what’s available, it’s familiar, and it gets the job done in the moment.</p>
+<p>But spreadsheets weren’t designed for data collection. There’s no validation on entry, so a date ends up typed three different ways. There’s no controlled vocabulary, so one category shows up under five spellings. Files get copied, renamed, and emailed around, so no one is sure which version is current. Columns change meaning partway through a year. By the time the data reaches an analyst, a large share of the effort goes into cleaning it, and some errors can’t be fixed because the information needed to fix them was never captured.</p>
+<p>These are system problems, not people problems. Give the same staff a well-designed form with validation and a shared database, and data quality improves right away.</p>
+</section>
+<section id="why-this-keeps-happening" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-keeps-happening">Why this keeps happening</h2>
+<p>It’s easy to read all of this as a criticism of the people doing the work. It isn’t. The program staff I work with care a great deal about the families they serve and want to know whether what they’re doing helps. The constraints are structural:</p>
+<ul>
+<li><strong>Funding follows compliance.</strong> Federal requirements come with deadlines and consequences. Evaluation usually doesn’t, so it’s often the first thing cut when budgets tighten.</li>
+<li><strong>Data collection is treated as overhead.</strong> It’s rarely budgeted as part of running a program, so it competes with direct services, and direct services almost always win.</li>
+<li><strong>Staff capacity is stretched thin.</strong> Teams running programs are often already at or past capacity. Designing and running a rigorous data collection effort on top of that isn’t realistic without dedicated support.</li>
+<li><strong>Research methods training isn’t part of most program roles.</strong> That’s reasonable. We don’t expect researchers to be eligibility experts either. But it means survey design and measurement often fall to people who were never given the tools for it.</li>
+</ul>
+<p>The result is a system very good at counting what it does and much less able to learn whether it’s working.</p>
+</section>
+<section id="what-would-help" class="level2">
+<h2 class="anchored" data-anchor-id="what-would-help">What would help</h2>
+<p>I don’t think the answer is a large new research operation in every program. Some smaller shifts would go a long way:</p>
+<ol type="1">
+<li><strong>Start with the question.</strong> Before collecting anything, write down what decision the data will inform and what you’d need to know to make it.</li>
+<li><strong>Bring research staff in early.</strong> An hour of consultation during design saves weeks of cleaning and reanalysis later, and can mean the difference between data that answers the question and data that can’t.</li>
+<li><strong>Budget for data collection as part of the program.</strong> If an outcome matters enough to ask about, it matters enough to fund measuring it properly, including staff time and infrastructure.</li>
+<li><strong>Collect less, but on purpose.</strong> A short, well-designed instrument that measures the right outcome beats a long survey that measures everything loosely.</li>
+<li><strong>Invest in shared infrastructure.</strong> Validated forms, secure databases, and standard definitions benefit every program that uses them and make each new collection cheaper than the last.</li>
+</ol>
+<p>Administrative data will always be the backbone of public-sector research, and it should be. It’s comprehensive, longitudinal, and already paid for. But if we want to know whether programs are actually improving people’s lives, we have to be willing to collect the data that question requires, and be honest about what that takes.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>government data</category>
+  <category>research methods</category>
+  <category>data quality</category>
+  <guid>https://hypnotoadie.github.io/posts/first-post/</guid>
+  <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Hello, world</title>
+  <dc:creator>Aaron Cochran</dc:creator>
+  <link>https://hypnotoadie.github.io/posts/welcome/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Welcome to my personal website. I’m Aaron Cochran, the Research Systems Specialist for Oregon Enterprise Data Analytics (OEDA). OEDA is a shared-services research team within the Office of Performance, Policy and Research (OPPR) at the Oregon Department of Human Services, co-funded by the Oregon Health Authority, so our work serves both agencies.</p>
+<section id="from-analyst-to-systems-builder" class="level2">
+<h2 class="anchored" data-anchor-id="from-analyst-to-systems-builder">From analyst to systems builder</h2>
+<p>I’ve spent more than ten years with the Oregon Department of Human Services, and my role has changed a lot in that time. I started as a Research Analyst 4, leading interagency research projects with partners from the Oregon Health Authority, the Oregon Employment Department, the Oregon Department of Education and Oregon Housing and Community Services.</p>
+<p>Along the way, I fell in love with the technical side of the job and started spending my spare time at work building durable systems and workflows for my teammates. I brought GitHub into our process to make our research more reproducible and transparent. In 2017 I led the procurement of our first machine learning server, Microsoft Machine Learning Server, which ran Microsoft’s own distribution of R. That server became the backbone for the predictive models my team built for agency programs. Microsoft retired the product in 2022, and in 2023 I migrated our remaining production model to open-source R so it could keep running.</p>
+</section>
+<section id="what-i-work-on-now" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-work-on-now">What I work on now</h2>
+<p>Today I lead our team’s research infrastructure. I led the procurement of our Posit Team environment, which runs in Snowpark Container Services as a Snowflake Native App, and I’m its administrator. That modern, scalable platform now hosts the production models and APIs our team builds, including some of the work I’m proudest of. I hope to write about it here in more detail.</p>
+</section>
+<section id="off-the-clock" class="level2">
+<h2 class="anchored" data-anchor-id="off-the-clock">Off the clock</h2>
+<p>Outside of work, I’m the lucky father of two young kids. When they aren’t keeping me busy with art projects, outdoor play, Fortnite matches and Minecraft builds, I love reading, creative writing and running tabletop RPGs. For more than a decade, I’ve had the good fortune of leading the same core group of friends through weekly adventures.</p>
+</section>
+<section id="what-youll-find-here" class="level2">
+<h2 class="anchored" data-anchor-id="what-youll-find-here">What you’ll find here</h2>
+<ul>
+<li><strong>Technical:</strong> the platforms, pipelines and tools behind our work.</li>
+<li><strong>Gov data:</strong> what doing data work inside state government is really like.</li>
+<li><strong>Off the clock:</strong> game sessions, worldbuilding and the technical tinkering I do in Foundry Virtual Tabletop (Foundry VTT).</li>
+<li><strong>Neurodivergence:</strong> what I’ve learned about working as a neurodivergent adult, and the strategies that help me thrive.</li>
+</ul>
+<p>I’ll do my best to keep posts short, interesting and relevant. I’m glad you’re here, and I hope you find something worthwhile.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Technical</category>
+  <category>Gov data</category>
+  <category>Off the clock</category>
+  <category>Neurodivergence</category>
+  <guid>https://hypnotoadie.github.io/posts/welcome/</guid>
+  <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
+</item>
 </channel>
 </rss>

@@ -1,10 +1,16 @@
 [
   {
     "listing": "/blog.html",
-    "items": []
+    "items": [
+      "/posts/first-post/index.html",
+      "/posts/welcome/index.html"
+    ]
   },
   {
     "listing": "/index.html",
-    "items": []
+    "items": [
+      "/posts/first-post/index.html",
+      "/posts/welcome/index.html"
+    ]
   }
 ]
