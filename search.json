@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "I’m always happy to talk about public-sector data work, Posit and Snowflake platforms, record linkage, or anything I’ve written here.\n\n  Show my email address →\n\n\n  \n    Say hello\n    Email is the best way to reach me.\n  \n  …\n\nYou can also find me on GitHub and LinkedIn."
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -40,5 +33,12 @@
     "title": "Not Missing at Random",
     "section": "",
     "text": "No matching items"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "I’m always happy to talk about public-sector data work, Posit and Snowflake platforms, record linkage, or anything I’ve written here.\n\n  Show my email address →\n\n\n  \n    Say hello\n    Email is the best way to reach me.\n  \n  …\n\nYou can also find me on GitHub and LinkedIn."
   }
 ]
