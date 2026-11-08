@@ -1,6 +1,6 @@
 ---
-title: "Writing"
-subtitle: "Technical notes, data work inside state government, and the occasional game off the clock."
+title: "Not Missing at Random"
+subtitle: "Notes on data in state government, and the occasional side quest"
 listing:
   contents: posts
   sort: "date desc"
