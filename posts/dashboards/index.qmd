@@ -1,0 +1,84 @@
+---
+title: "What Was the Question?"
+description: "Agencies often ask for a dashboard when what they need is an answer. The difference matters, and it starts before anyone opens a BI tool."
+author: "Aaron Cochran"
+date: 2026-11-08
+categories: [government data, dashboards, decision-making]
+draft: true
+---
+
+The request usually arrives in one sentence: "Can we get a dashboard for this?"
+
+It's a reasonable thing to ask. Dashboards are visible, they feel modern, and they promise that someone will finally be able to *see* what's going on. I've built plenty of them, and some have been genuinely useful.
+
+But in my experience the request is rarely about the dashboard. It's a stand-in for a question nobody has had time to write down yet.
+
+## A dashboard is a format, not a finding
+
+A dashboard answers the question "what is the current value of these measures?" That's a fine question when you already know which measures matter and what you'll do when they move.
+
+Most of the time, though, the real questions sound different:
+
+- Is the program reaching the people it was designed for?
+- Did the change we made last year do anything?
+- Where should we put the next dollar or the next staff member?
+
+None of those can be answered by watching a number tick up or down. They need a comparison, a time frame, a definition of "reached" or "worked," and someone willing to say what result would change the decision. A dashboard can *display* the output of that work. It can't do the work.
+
+## "Data people" covers a lot of ground
+
+There's a related confusion underneath many of these requests. Anyone who works with data tends to get filed under one label: "data people." But the label covers several different kinds of work, and they answer different kinds of questions.
+
+**Business intelligence and reporting** is about describing what is happening: counts, rates, trends, and simple cross-tabs. It's valuable, and doing it well is harder than it looks. It takes clean definitions, reliable pipelines, and design that people can actually read. Most organizations need much more of it than they have.
+
+**Statistical research** is about explaining *why* something is happening, or whether a program caused a change. It means modeling many factors at once, accounting for who ends up in a program in the first place, and being honest about uncertainty. A count by region can't tell you whether a program worked, because regions differ in ways the count doesn't show.
+
+**Machine learning** is about prediction: estimating what is likely to happen for a case, and doing it in a way that holds up on new data. That brings its own questions about validation, fairness, and what happens after the model is deployed.
+
+These aren't a ranking. They are different tools, with different skills, timelines, and costs. The trouble starts when a question that needs one is handed to a team set up for another. A request for "a quick look at whether the program is working" arrives as a dashboard request, and everyone is satisfied until someone makes a decision from a bivariate chart that can't support it.
+
+Part of the answer is simply to name the difference early. "Do you need to see what's happening, understand why, or predict what comes next?" is a short question, and it changes who should be in the room and how long the work will take.
+
+<!-- STORY SLOT (optional): a short anonymized example of a dashboard or report that was asked to answer a "why" question. 3-5 sentences. Could go right here or in the opening. -->
+
+## How it happens
+
+None of this is a failing of the people asking. The incentives point this way:
+
+- **Dashboards are easy to approve.** A deliverable with a name, a launch date, and a screenshot is simple to put in a project plan. "We need to work out what we're asking" is not.
+- **Compliance reporting trained us to think in measures.** When so much of public-sector data work is about producing required numbers on a schedule, "show me the numbers" becomes the natural way to ask for help.
+- **Measures are available, outcomes mostly aren't.** Administrative data is rich in counts, dates, and payments. It's thin on whether someone's life improved. So dashboards fill up with what's easy to count.
+- **Nobody is staffed to ask the earlier question.** Research and analytics teams are often brought in after the tool has been chosen, when the only job left is to build it.
+
+## The quiet costs
+
+A dashboard that doesn't connect to a decision doesn't just sit there harmlessly.
+
+It can create a **false sense of monitoring**. Someone is watching a metric, so the issue feels handled, even if no one has agreed on what a worrying value looks like.
+
+It can **narrow attention** to whatever fits on the screen. Measures that are hard to collect never make it onto the page, so they quietly stop counting.
+
+And it carries an **ongoing cost**. Every dashboard needs data pipelines, definitions, access controls, and someone to fix it when a source changes. Many get built and never retired, and then nobody is sure which ones are still right.
+
+## A few questions worth asking first
+
+Before building anything, I try to get answers to these. They take about twenty minutes, and they've saved me weeks. (The fifth one is the subject of the section above.)
+
+1. **What decision will this inform, and who makes it?** If there isn't one, that's useful to know.
+2. **What would you do differently if the number went up? If it went down?** If the answer is "nothing," the measure probably doesn't belong.
+3. **How often does that decision actually get made?** A quarterly decision doesn't need a live feed.
+4. **Do we trust the definitions?** Two programs counting "active case" differently will produce a dashboard that looks authoritative and means little.
+5. **Are you trying to see what's happening, understand why, or predict what's next?** Those are different kinds of work, and the answer shapes everything else.
+6. **Is a dashboard the right format?** Sometimes the better product is a one-page brief, a recurring report with commentary, or a single well-designed analysis.
+
+## What a good one looks like
+
+I don't want this to read as anti-dashboard. A good dashboard is built *after* the questions are clear. It shows a small number of measures, each tied to a decision. It has an owner. Its definitions are written down where users can find them. And it has a review date, so it can be updated or retired on purpose.
+
+That's a different thing from a screen of charts, even if they use the same software.
+
+## Where this leaves us
+
+The next time the request for a dashboard shows up, I'd suggest treating it as the start of a conversation rather than a specification. The most helpful thing an analyst can often say is: "Great, what are we hoping to learn?"
+
+Better tools won't fix this. Better questions will, and they cost far less than another dashboard nobody opens.
