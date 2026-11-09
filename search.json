@@ -1,33 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "I’m Aaron Cochran, the Research Systems Specialist for Oregon Enterprise Data Analytics (OEDA), a shared-services research team within the Office of Performance, Policy and Research (OPPR) at the Oregon Department of Human Services. OEDA is co-funded by the Oregon Health Authority, so our work serves both agencies.\nIn practice that means I’m part data scientist, part platform administrator. I’m responsible for infrastructure, governance and research tooling: the systems researchers use to do careful work with sensitive data."
-  },
-  {
-    "objectID": "about.html#what-i-work-on",
-    "href": "about.html#what-i-work-on",
-    "title": "About",
-    "section": "What I work on",
-    "text": "What I work on\n\nResearch platforms. Standing up and governing Posit Team on Snowflake — environments, access, promotion workflows and documentation.\nRecord linkage. Probabilistic matching and identity resolution across agencies, designed so data can be shared without over-sharing.\nModels in production. Moving models out of notebooks and into versioned, documented APIs with vetiver and plumber.\n\nI work mostly in R (in Positron), with Python alongside, across Snowflake, SQL Server, GitHub, AWS and Azure."
-  },
-  {
-    "objectID": "about.html#off-the-clock",
-    "href": "about.html#off-the-clock",
-    "title": "About",
-    "section": "Off the clock",
-    "text": "Off the clock\nI run tabletop RPGs, self-host the server my group plays on, and write about it here now and then. I’m also an avid PC gamer, hiker, photographer, and worldbuilder, and a very lucky dad."
-  },
-  {
-    "objectID": "about.html#elsewhere",
-    "href": "about.html#elsewhere",
-    "title": "About",
-    "section": "Elsewhere",
-    "text": "Elsewhere\n\nGitHub: hypnotoadie\nLinkedIn: aaroncochran\nEmail: get in touch\n\nViews on this site are my own and not those of my employer."
-  },
-  {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
     "title": "Hello, world",
@@ -112,17 +84,45 @@
     "text": "What would help\nI don’t think the answer is a large new research operation in every program. Some smaller shifts would go a long way:\n\nStart with the question. Before collecting anything, write down what decision the data will inform and what you’d need to know to make it.\nBring research staff in early. An hour of consultation during design saves weeks of cleaning and reanalysis later, and can mean the difference between data that answers the question and data that can’t.\nBudget for data collection as part of the program. If an outcome matters enough to ask about, it matters enough to fund measuring it properly, including staff time and infrastructure.\nCollect less, but on purpose. A short, well-designed instrument that measures the right outcome beats a long survey that measures everything loosely.\nInvest in shared infrastructure. Validated forms, secure databases, and standard definitions benefit every program that uses them and make each new collection cheaper than the last.\n\nAdministrative data will always be the backbone of public-sector research, and it should be. It’s comprehensive, longitudinal, and already paid for. But if we want to know whether programs are actually improving people’s lives, we have to be willing to collect the data that question requires, and be honest about what that takes."
   },
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Not Missing at Random",
-    "section": "",
-    "text": "Why We Never Have the Data We Need\n\n\n\ngovernment data\n\nresearch methods\n\ndata quality\n\n\n\n\nAdministrative data is what public-sector researchers work with because it exists, not because it answers our questions. Closing that gap starts with being honest about what purposeful data collection costs.\n\n\n\n\n\n\nNov 8, 2026\n\n\nAaron Cochran\n\n\n\n\n\n\n\n\n\n\n\n\nHello, world\n\n\n\nTechnical\n\nGov data\n\nOff the clock\n\nNeurodivergence\n\n\n\n\nWho I am, what I work on, and what you’ll find here.\n\n\n\n\n\n\nNov 8, 2026\n\n\nAaron Cochran\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "contact.html",
     "href": "contact.html",
     "title": "Contact",
     "section": "",
     "text": "I’m always happy to talk about public-sector data work, Posit and Snowflake platforms, record linkage, or anything I’ve written here.\n\n  Show my email address →\n\n\n  \n    Say hello\n    Email is the best way to reach me.\n  \n  …\n\nYou can also find me on GitHub and LinkedIn."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m Aaron Cochran, the Research Systems Specialist for Oregon Enterprise Data Analytics (OEDA), a shared-services research team within the Office of Performance, Policy and Research (OPPR) at the Oregon Department of Human Services. OEDA is co-funded by the Oregon Health Authority, so our work serves both agencies.\nIn practice that means I’m part data scientist, part platform administrator. I’m responsible for infrastructure, governance and research tooling: the systems researchers use to do careful work with sensitive data."
+  },
+  {
+    "objectID": "about.html#what-i-work-on",
+    "href": "about.html#what-i-work-on",
+    "title": "About",
+    "section": "What I work on",
+    "text": "What I work on\n\nResearch platforms. Standing up and governing Posit Team on Snowflake — environments, access, promotion workflows and documentation.\nRecord linkage. Probabilistic matching and identity resolution across agencies, designed so data can be shared without over-sharing.\nModels in production. Moving models out of notebooks and into versioned, documented APIs with vetiver and plumber.\n\nI work mostly in R (in Positron), with Python alongside, across Snowflake, SQL Server, GitHub, AWS and Azure."
+  },
+  {
+    "objectID": "about.html#off-the-clock",
+    "href": "about.html#off-the-clock",
+    "title": "About",
+    "section": "Off the clock",
+    "text": "Off the clock\nI run tabletop RPGs, self-host the server my group plays on, and write about it here now and then. I’m also an avid PC gamer, hiker, photographer, and worldbuilder, and a very lucky dad."
+  },
+  {
+    "objectID": "about.html#elsewhere",
+    "href": "about.html#elsewhere",
+    "title": "About",
+    "section": "Elsewhere",
+    "text": "Elsewhere\n\nGitHub: hypnotoadie\nLinkedIn: aaroncochran\nEmail: get in touch\n\nViews on this site are my own and not those of my employer."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Not Missing at Random",
+    "section": "",
+    "text": "Why We Never Have the Data We Need\n\n\n\ngovernment data\n\nresearch methods\n\ndata quality\n\n\n\nAdministrative data is what public-sector researchers work with because it exists, not because it answers our questions. Closing that gap starts with being honest about what purposeful data collection costs.\n\n\n\n\n\nNov 8, 2026\n\n\nAaron Cochran\n\n\n\n\n\n\n\n\n\n\n\n\nHello, world\n\n\n\nTechnical\n\nGov data\n\nOff the clock\n\nNeurodivergence\n\n\n\nWho I am, what I work on, and what you’ll find here.\n\n\n\n\n\nNov 8, 2026\n\n\nAaron Cochran\n\n\n\n\n\nNo matching items"
   }
 ]

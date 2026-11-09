@@ -9,8 +9,8 @@
 <link>https://hypnotoadie.github.io/blog.html</link>
 <atom:link href="https://hypnotoadie.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Data infrastructure, governance and research tooling in state government — plus the occasional tabletop game.</description>
-<generator>quarto-1.11.9</generator>
-<lastBuildDate>Sun, 08 Nov 2026 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.8.24</generator>
+<lastBuildDate>Sun, 08 Nov 2026 08:00:00 GMT</lastBuildDate>
 <item>
   <title>Why We Never Have the Data We Need</title>
   <dc:creator>Aaron Cochran</dc:creator>
@@ -102,7 +102,7 @@
   <category>research methods</category>
   <category>data quality</category>
   <guid>https://hypnotoadie.github.io/posts/first-post/</guid>
-  <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
+  <pubDate>Sun, 08 Nov 2026 08:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Hello, world</title>
@@ -147,7 +147,7 @@
   <category>Off the clock</category>
   <category>Neurodivergence</category>
   <guid>https://hypnotoadie.github.io/posts/welcome/</guid>
-  <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
+  <pubDate>Sun, 08 Nov 2026 08:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
