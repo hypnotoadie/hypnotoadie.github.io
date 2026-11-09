@@ -1,5 +1,5 @@
 ---
-title: "Data Isn't Free: The Gap Between the Data We Have and the Data We Need"
+title: "Why We Never Have the Data We Need"
 description: "Administrative data is what public-sector researchers work with because it exists, not because it answers our questions. Closing that gap starts with being honest about what purposeful data collection costs."
 author: "Aaron Cochran"
 date: 2026-11-08
