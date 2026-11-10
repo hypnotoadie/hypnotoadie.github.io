@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://hypnotoadie.github.io/about.html</loc>
-    <lastmod>2026-11-10T01:42:19.983Z</lastmod>
-  </url>
-  <url>
     <loc>https://hypnotoadie.github.io/posts/welcome/index.html</loc>
-    <lastmod>2026-11-10T01:42:19.985Z</lastmod>
+    <lastmod>2026-11-10T01:31:37.812Z</lastmod>
   </url>
   <url>
     <loc>https://hypnotoadie.github.io/posts/first-post/index.html</loc>
-    <lastmod>2026-11-10T01:42:19.985Z</lastmod>
+    <lastmod>2026-11-09T02:57:19.641Z</lastmod>
   </url>
   <url>
     <loc>https://hypnotoadie.github.io/posts/cost-of-data-requests/index.html</loc>
-    <lastmod>2026-11-10T01:42:19.985Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hypnotoadie.github.io/blog.html</loc>
-    <lastmod>2026-11-10T01:42:19.984Z</lastmod>
+    <lastmod>2026-11-10T02:05:21.009Z</lastmod>
   </url>
   <url>
     <loc>https://hypnotoadie.github.io/contact.html</loc>
-    <lastmod>2026-11-10T01:42:19.984Z</lastmod>
+    <lastmod>2026-11-08T18:21:40.772Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hypnotoadie.github.io/about.html</loc>
+    <lastmod>2026-11-10T01:31:37.787Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hypnotoadie.github.io/blog.html</loc>
+    <lastmod>2026-11-08T22:43:14.739Z</lastmod>
   </url>
   <url>
     <loc>https://hypnotoadie.github.io/index.html</loc>
-    <lastmod>2026-11-10T01:42:19.984Z</lastmod>
+    <lastmod>2026-11-10T01:31:37.796Z</lastmod>
   </url>
 </urlset>
