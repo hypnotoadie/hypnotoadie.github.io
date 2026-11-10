@@ -2,16 +2,16 @@
   {
     "listing": "/blog.html",
     "items": [
-      "/posts/first-post/index.html",
       "/posts/cost-of-data-requests/index.html",
+      "/posts/first-post/index.html",
       "/posts/welcome/index.html"
     ]
   },
   {
     "listing": "/index.html",
     "items": [
-      "/posts/first-post/index.html",
       "/posts/cost-of-data-requests/index.html",
+      "/posts/first-post/index.html",
       "/posts/welcome/index.html"
     ]
   }
