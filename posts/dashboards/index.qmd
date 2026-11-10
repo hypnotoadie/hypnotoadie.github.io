@@ -1,7 +1,6 @@
 ---
 title: "What Was the Question?"
 description: "Agencies often ask for a dashboard when what they need is an answer. The difference matters, and it starts before anyone opens a BI tool."
-author: "Aaron Cochran"
 date: 2026-11-08
 categories: [government data, dashboards, decision-making]
 draft: true

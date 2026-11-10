@@ -1,7 +1,6 @@
 ---
 title: "What Are You Going to Do With It?"
 description: "Why 'nice to know' questions are the most expensive ones in research, and the one question that makes them better."
-author: "Aaron Cochran"
 date: "2026-11-09"
 categories: [research, data linkage, public sector]
 draft: false
