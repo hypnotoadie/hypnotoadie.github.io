@@ -7,15 +7,15 @@ draft: true
 
 People who rely on state government services rarely deal with just one agency. A family might get food assistance from one, health coverage from another, and housing support from a third, while their kids attend schools overseen by a fourth. Every one of those agencies holds part of the picture. Almost none of them can see the rest.
 
-If you want to know whether a housing program reduces emergency room visits, or whether family economic support improves school outcomes, you need data from more than one agency. In my experience, getting it is one of the hardest things in public-sector research. Not because the technology is hard, but because nearly everything else is.
+If you want to know whether a housing program reduces emergency room visits, or whether family economic support improves school outcomes, you need data from more than one agency. Getting it is one of the hardest things in public-sector research. Not because the technology is hard, but because nearly everything else is.
 
 ## How data sharing actually happens
 
 When cross-agency data sharing works, it's usually because someone with authority told everyone to make it work.
 
-The most successful effort I've been part of was a statewide homelessness initiative directed from the governor's office. Several agencies were expected to share data, and they did. Agreements got written, data moved, and analysts across agencies worked together on questions no single agency could answer alone. It was a good example of what's possible.
+Picture a high-priority statewide initiative directed from the governor's office. Several agencies are expected to share data, and they do. Agreements get written, data moves, and analysts across agencies work together on questions no single agency could answer alone. That's what's possible.
 
-But it worked because leadership spent political capital to make it happen. Without that push, the default is caution. Each agency asks what could go wrong if it shares, and nobody asks what goes wrong if it doesn't.
+But that kind of effort works because leadership spends political capital to make it happen. Without that push, the default is caution. Each agency asks what could go wrong if it shares, and nobody asks what goes wrong if it doesn't.
 
 That asymmetry is the core problem. The incentives in government data sharing almost all point toward saying no.
 
@@ -48,7 +48,7 @@ The Family Educational Rights and Privacy Act (FERPA) is one of the laws most of
 
 FERPA does restrict disclosure of student records. But it also includes exceptions written for exactly the kind of work public-sector researchers do. The **studies exception** allows disclosure, under a written agreement, for studies done for or on behalf of education agencies to develop or validate tests, administer student aid, or improve instruction. The **audit or evaluation exception** allows disclosure to authorized representatives evaluating federal- or state-supported education programs. The U.S. Department of Education publishes guidance on both, including what the written agreements need to contain.
 
-I've seen FERPA cited as the reason longitudinal education data couldn't be shared with a research team even when improving instruction was explicitly one of the study's goals. That's the kind of purpose the studies exception describes. The law wasn't the barrier. The interpretation was.
+A common version of this: FERPA is cited as the reason longitudinal education data can't be shared with a research team, even when improving instruction is explicitly one of the study's goals. That's the kind of purpose the studies exception describes. The law isn't the barrier. The interpretation is.
 
 ## Aligning with the intent of the law
 
@@ -78,9 +78,9 @@ Agency directors are in the best position to fix this, because they own the data
 
 Because so much depends on interpretation, data sharing is unusually sensitive to who holds key positions.
 
-I've seen a partner agency go from broad, productive data sharing under one research leader to almost none under his successor. The law didn't change. The data didn't change. The interpretation did. Years of collaboration ended in a matter of weeks.
+Picture a partnership that goes from broad, productive data sharing under one research leader to almost none under their successor. The law doesn't change. The data doesn't change. The interpretation does. Years of collaboration can end in a matter of weeks.
 
-That's fragile, and it's why champions matter. Every successful data-sharing effort I've seen had at least one person inside the agency who understood the value of the work and was willing to advocate for it. Building a critical mass of those champions, across programs, legal, and leadership, is how culture changes over time. When sharing depends on one person, it ends when they leave. When it depends on shared expectations and clear policy, it lasts.
+That's fragile, and it's why champions matter. Successful data-sharing efforts tend to have at least one person inside the agency who understands the value of the work and is willing to advocate for it. Building a critical mass of those champions, across programs, legal, and leadership, is how culture changes over time. When sharing depends on one person, it ends when they leave. When it depends on shared expectations and clear policy, it lasts.
 
 ## The technology is the easier part
 

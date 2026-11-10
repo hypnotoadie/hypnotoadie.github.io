@@ -1,0 +1,77 @@
+---
+title: "What Are You Going to Do With It?"
+description: "Why 'nice to know' questions are the most expensive ones in research, and the one question that makes them better."
+author: "Aaron Cochran"
+date: "2026-11-09"
+categories: [research, data linkage, public sector]
+draft: true
+---
+
+::: {.callout-note appearance="simple"}
+The scenarios in this post are hypothetical, written to illustrate a pattern rather than describe any particular program or request.
+:::
+
+Imagine a program asks whether the lunar cycle explains their call volume. Not just that some weeks bring more calls, but that those weeks bring more *complicated* calls too.
+
+It's a charming question, and it's easy to see where it comes from. Staff who spend their days on the phones notice patterns, and a full moon is a tidy story for a chaotic week.
+
+It's also a good example of what I think of as a "nice to know" question: one where the answer might be interesting, but nobody can say what would change if we had it.
+
+I'm part of an interagency research team in state government. We don't run a data request desk, and the difference matters, because questions like this one are expensive.
+
+## Nothing about it is quick
+
+From the outside, answering a question looks like a lookup. Someone has the numbers somewhere, so you pull them.
+
+In practice, the data a program needs usually lives in more than one system, built at different times by different teams for different purposes. They don't share an identifier. They define the same word differently. One counts a person once, another counts every contact. One records when something happened, another records when it was entered.
+
+Linking them in a way that holds up for research means a long series of decisions:
+
+- How do we decide two records are the same person?
+- What do we do when we're not sure?
+- Which definition of "active" are we using, and who agreed to it?
+- What are we allowed to combine, and under what protections?
+
+None of those decisions is visible in the final number. All of them can change it. That's the hidden work, and it costs the same whether the question matters or not.
+
+## The expensive question is the one with no decision attached
+
+Back to the moon. Suppose we spent weeks linking call logs to case records to measure "complexity," then found a lunar effect, or didn't. What would the program do differently on Monday?
+
+The better question sits right underneath: *what drives the busy, complicated weeks, and can we plan for them?* That one has real answers. Maybe complex calls follow benefit notices, deadlines, or system changes. Those are things a program can staff, train, and communicate around.
+
+Same data, same linking work, but one version changes what happens next and the other doesn't.
+
+## The slow slide toward smaller slices
+
+The moon question is the dramatic case. The common one is quieter.
+
+Picture an analysis that's been delivered, and the response is, "Great, can we see it for just this region?" Then: "Just this region, for people under 25?" Then: "What about just the ones who also had this other thing?"
+
+Each request sounds small. But each one tends to ask for something new:
+
+- **Smaller groups are noisier.** At some point you're no longer describing a pattern, you're describing a handful of people. The numbers jump around for reasons that have nothing to do with the program.
+- **Smaller groups are riskier.** The fewer people in a cell, the easier it is to work out who they are. That's a privacy problem, and sometimes the right answer is that we can't show it.
+- **Every new cut can mean new linkage.** Adding a characteristic often means pulling in another source and redoing the matching decisions.
+
+"Slice it a different way" isn't a bad request. The trouble is when it arrives without a reason. What would you learn from seeing it this way that you can't see now? And what would you do about it?
+
+## The question worth asking
+
+So I ask one, as gently as I can:
+
+> **"What would you do differently if the answer came back high, versus low?"**
+
+This isn't gatekeeping. Often there's a real answer, and we get to a sharper question together. Sometimes the person was really asking something else, like the staffing question above. And sometimes the honest answer is "nothing, I was just curious," which is fine to say out loud. It's just not a good use of weeks of linkage work.
+
+A question that's ready for research usually has three things:
+
+1. A **decision or action** it could inform.
+2. A **population** big enough to say something stable about.
+3. A **comparison** that means something: compared to what, or over what period?
+
+## Why this matters
+
+Time spent chasing facts that lead nowhere is time not spent on the questions that could improve a program. A research team has limited capacity, and it's worth protecting for the questions that matter.
+
+Curiosity is where most good questions start. The work is helping it find its way to something a program can act on.

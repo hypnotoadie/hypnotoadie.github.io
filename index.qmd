@@ -54,7 +54,7 @@ listing:
 <section class="ac-wrap ac-section" id="work">
   <div class="ac-section-head">
     <h2>What I work on</h2>
-    <p>Research Systems Specialist at the Oregon Department of Human Services — part data scientist, part platform admin.</p>
+    <p>Research Systems Specialist on an interagency research team in state government — part data scientist, part platform admin.</p>
   </div>
   <div class="ac-cards">
     <article class="ac-card">
@@ -93,7 +93,7 @@ listing:
   <div class="ac-wrap ac-about">
     <p class="ac-thesis">Government data work is mostly <em>trust work</em>. The tooling is how you earn it.</p>
     <div class="ac-about-body">
-      <p>I'm part of Oregon Enterprise Data Analytics, a shared-services research team within ODHS's Office of Performance, Policy and Research, co-funded by the Oregon Health Authority. My job sits between infrastructure, governance and research tooling.</p>
+      <p>I'm part of an interagency research team in state government. My job sits between infrastructure, governance and research tooling.</p>
       <p>Here I write about that work, about what it's like doing data science inside state government, and occasionally about neurodivergence and the tabletop games I run on the side.</p>
       <a href="about.html">More about me <span aria-hidden="true">→</span></a>
     </div>
