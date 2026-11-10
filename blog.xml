@@ -9,8 +9,92 @@
 <link>https://hypnotoadie.github.io/blog.html</link>
 <atom:link href="https://hypnotoadie.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Data infrastructure, governance and research tooling in state government — plus the occasional tabletop game.</description>
-<generator>quarto-1.11.9</generator>
-<lastBuildDate>Sun, 08 Nov 2026 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.8.24</generator>
+<lastBuildDate>Mon, 09 Nov 2026 08:00:00 GMT</lastBuildDate>
+<item>
+  <title>What Are You Going to Do With It?</title>
+  <dc:creator>Aaron Cochran</dc:creator>
+  <link>https://hypnotoadie.github.io/posts/cost-of-data-requests/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The scenarios in this post are hypothetical, written to illustrate a pattern rather than describe any particular program or request.</p>
+</div>
+</div>
+</div>
+<p>Imagine a program asks whether the lunar cycle explains their call volume. Not just that some weeks bring more calls, but that those weeks bring more <em>complicated</em> calls too.</p>
+<p>It’s a charming question, and it’s easy to see where it comes from. Staff who spend their days on the phones notice patterns, and a full moon is a tidy story for a chaotic week.</p>
+<p>It’s also a good example of what I think of as a “nice to know” question: one where the answer might be interesting, but nobody can say what would change if we had it.</p>
+<p>I’m part of an interagency research team in state government. We don’t run a data request desk, and the difference matters, because questions like this one are expensive.</p>
+<section id="nothing-about-it-is-quick" class="level2">
+<h2 class="anchored" data-anchor-id="nothing-about-it-is-quick">Nothing about it is quick</h2>
+<p>From the outside, answering a question looks like a lookup. Someone has the numbers somewhere, so you pull them.</p>
+<p>In practice, the data a program needs usually lives in more than one system, built at different times by different teams for different purposes. They don’t share an identifier. They define the same word differently. One counts a person once, another counts every contact. One records when something happened, another records when it was entered.</p>
+<p>Linking them in a way that holds up for research means a long series of decisions:</p>
+<ul>
+<li>How do we decide two records are the same person?</li>
+<li>What do we do when we’re not sure?</li>
+<li>Which definition of “active” are we using, and who agreed to it?</li>
+<li>What are we allowed to combine, and under what protections?</li>
+</ul>
+<p>None of those decisions is visible in the final number. All of them can change it. That’s the hidden work, and it costs the same whether the question matters or not.</p>
+</section>
+<section id="the-expensive-question-is-the-one-with-no-decision-attached" class="level2">
+<h2 class="anchored" data-anchor-id="the-expensive-question-is-the-one-with-no-decision-attached">The expensive question is the one with no decision attached</h2>
+<p>Back to the moon. Suppose we spent weeks linking call logs to case records to measure “complexity,” then found a lunar effect, or didn’t. What would the program do differently on Monday?</p>
+<p>The better question sits right underneath: <em>what drives the busy, complicated weeks, and can we plan for them?</em> That one has real answers. Maybe complex calls follow benefit notices, deadlines, or system changes. Those are things a program can staff, train, and communicate around.</p>
+<p>Same data, same linking work, but one version changes what happens next and the other doesn’t.</p>
+</section>
+<section id="the-slow-slide-toward-smaller-slices" class="level2">
+<h2 class="anchored" data-anchor-id="the-slow-slide-toward-smaller-slices">The slow slide toward smaller slices</h2>
+<p>The moon question is the dramatic case. The common one is quieter.</p>
+<p>Picture an analysis that’s been delivered, and the response is, “Great, can we see it for just this region?” Then: “Just this region, for people under 25?” Then: “What about just the ones who also had this other thing?”</p>
+<p>Each request sounds small. But each one tends to ask for something new:</p>
+<ul>
+<li><strong>Smaller groups are noisier.</strong> At some point you’re no longer describing a pattern, you’re describing a handful of people. The numbers jump around for reasons that have nothing to do with the program.</li>
+<li><strong>Smaller groups are riskier.</strong> The fewer people in a cell, the easier it is to work out who they are. That’s a privacy problem, and sometimes the right answer is that we can’t show it.</li>
+<li><strong>Every new cut can mean new linkage.</strong> Adding a characteristic often means pulling in another source and redoing the matching decisions.</li>
+</ul>
+<p>“Slice it a different way” isn’t a bad request. The trouble is when it arrives without a reason. What would you learn from seeing it this way that you can’t see now? And what would you do about it?</p>
+</section>
+<section id="the-question-worth-asking" class="level2">
+<h2 class="anchored" data-anchor-id="the-question-worth-asking">The question worth asking</h2>
+<p>So I ask one, as gently as I can:</p>
+<blockquote class="blockquote">
+<p><strong>“What would you do differently if the answer came back high, versus low?”</strong></p>
+</blockquote>
+<p>This isn’t gatekeeping. Often there’s a real answer, and we get to a sharper question together. Sometimes the person was really asking something else, like the staffing question above. And sometimes the honest answer is “nothing, I was just curious,” which is fine to say out loud. It’s just not a good use of weeks of linkage work.</p>
+<p>A question that’s ready for research usually has three things:</p>
+<ol type="1">
+<li>A <strong>decision or action</strong> it could inform.</li>
+<li>A <strong>population</strong> big enough to say something stable about.</li>
+<li>A <strong>comparison</strong> that means something: compared to what, or over what period?</li>
+</ol>
+</section>
+<section id="why-this-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-matters">Why this matters</h2>
+<p>Time spent chasing facts that lead nowhere is time not spent on the questions that could improve a program. A research team has limited capacity, and it’s worth protecting for the questions that matter.</p>
+<p>Curiosity is where most good questions start. The work is helping it find its way to something a program can act on.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>research</category>
+  <category>data linkage</category>
+  <category>public sector</category>
+  <guid>https://hypnotoadie.github.io/posts/cost-of-data-requests/</guid>
+  <pubDate>Mon, 09 Nov 2026 08:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Hello, world</title>
   <dc:creator>Aaron Cochran</dc:creator>
@@ -54,7 +138,7 @@
   <category>Off the clock</category>
   <category>Neurodivergence</category>
   <guid>https://hypnotoadie.github.io/posts/welcome/</guid>
-  <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
+  <pubDate>Sun, 08 Nov 2026 08:00:00 GMT</pubDate>
 </item>
 <item>
   <title>You Get the Data You Pay For</title>
@@ -147,7 +231,7 @@
   <category>research methods</category>
   <category>data quality</category>
   <guid>https://hypnotoadie.github.io/posts/first-post/</guid>
-  <pubDate>Tue, 10 Nov 2026 01:42:13 GMT</pubDate>
+  <pubDate>Tue, 10 Nov 2026 01:42:30 GMT</pubDate>
 </item>
 </channel>
 </rss>
