@@ -1,6 +1,7 @@
 ---
 title: "You Get the Data You Pay For"
 description: "Administrative data is what public-sector researchers work with because it exists, not because it answers our questions. Closing that gap starts with being honest about what purposeful data collection costs."
+date: 2026-11-08
 categories: [government data, research methods, data quality]
 draft: false
 ---
