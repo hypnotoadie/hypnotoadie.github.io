@@ -12,7 +12,7 @@ I don't sit firmly in one camp. I'm not purely a researcher, and I'm not purely 
 
 On the infrastructure side, I build out the platforms our team works on, train staff to use them, set the standards we follow, and manage our GitHub. On the research side, I work directly with researchers to productionize their code, so that analysis can become something other people can run, rely on and use.
 
-That position is why our work has shifted from delivering reports and papers to building research tools that put the research to use. We still write reports, but we publish them as HTML on Posit Connect so they're accessible to staff who use screen readers. We also build simulations that help leadership and management weigh decisions before they make them.
+That position is part of why our work has shifted from delivering reports and papers to building research tools that put the research to use. We still write reports, but we publish them as HTML on Posit Connect so they're accessible to staff who use screen readers. We also build simulations that help leadership and management weigh decisions before they make them.
 
 ## What I work on
 
@@ -22,7 +22,7 @@ That position is why our work has shifted from delivering reports and papers to 
 - **Record linkage.** Probabilistic matching and identity resolution across agencies, designed so data can be shared without over-sharing.
 - **Models in production.** Moving models out of notebooks and into versioned, documented APIs with vetiver and plumber.
 
-I work in R (in Positron), with Python alongside, across Snowflake, SQL Server, GitHub, Databricks, AWS and Azure.
+I work in R (using Positron), with Python alongside, across Snowflake, SQL Server, GitHub, Databricks, AWS and Azure.
 
 ## Off the clock
 
