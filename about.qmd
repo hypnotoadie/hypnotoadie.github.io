@@ -6,17 +6,27 @@ I'm Aaron Cochran, a Research Systems Specialist on an interagency research team
 
 In practice that means I'm part data scientist, part platform administrator. I'm responsible for infrastructure, governance and research tooling: the systems researchers use to do careful work with sensitive data.
 
+## Between research and infrastructure
+
+I don't sit firmly in one camp. I'm not purely a researcher, and I'm not purely an infrastructure engineer. I work in the space between them, where research needs systems that can actually support it.
+
+On the infrastructure side, I build out the platforms our team works on, train staff to use them, set the standards we follow, and manage our GitHub. On the research side, I work directly with researchers to productionize their code, so that analysis can become something other people can run, rely on and use.
+
+That position is why our work has shifted from delivering reports and papers to building research tools that put the research to use. We still write reports, but we publish them as HTML on Posit Connect so they're accessible to staff who use screen readers. We also build simulations that help leadership and management weigh decisions before they make them.
+
 ## What I work on
 
-- **Research platforms.** Standing up and governing Posit Team on Snowflake — environments, access, promotion workflows and documentation.
+- **Research platforms.** Standing up and governing Posit Team on Snowflake: environments, access, promotion workflows and documentation.
+- **Standards and training.** Developing the conventions our team works by and teaching staff how to use the tools.
+- **Research tools and accessible publishing.** Turning findings into things people can use: accessible HTML reports and simulations that support decisions.
 - **Record linkage.** Probabilistic matching and identity resolution across agencies, designed so data can be shared without over-sharing.
 - **Models in production.** Moving models out of notebooks and into versioned, documented APIs with vetiver and plumber.
 
-I work mostly in R (in Positron), with Python alongside, across Snowflake, SQL Server, GitHub, AWS and Azure.
+I work in R (in Positron), with Python alongside, across Snowflake, SQL Server, GitHub, Databricks, AWS and Azure.
 
 ## Off the clock
 
-I run tabletop RPGs, self-host the server my group plays on, and write about it here now and then. I'm also an avid PC gamer, hiker, photographer, and worldbuilder, and a very lucky dad.
+I run tabletop RPGs, self-host the server my group plays on, and write about it here now and then. I'm also an avid PC gamer, hiker, photographer, and worldbuilder, and a very lucky husband and dad.
 
 ## Elsewhere
 
