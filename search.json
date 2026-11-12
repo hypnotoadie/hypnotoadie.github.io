@@ -35,41 +35,6 @@
     "text": "Elsewhere\n\nGitHub: hypnotoadie\nLinkedIn: aaroncochran\nEmail: get in touch\n\nViews on this site are my own and not those of my employer."
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Hello, world",
-    "section": "",
-    "text": "Welcome to my personal website. I’m Aaron Cochran, a Research Systems Specialist on an interagency research team in state government. Our work serves more than one agency."
-  },
-  {
-    "objectID": "posts/welcome/index.html#from-analyst-to-systems-builder",
-    "href": "posts/welcome/index.html#from-analyst-to-systems-builder",
-    "title": "Hello, world",
-    "section": "From analyst to systems builder",
-    "text": "From analyst to systems builder\nI’ve spent more than ten years in state government, and my role has changed a lot in that time. I started as a research analyst, leading interagency research projects with partners from other state agencies.\nAlong the way, I fell in love with the technical side of the job and started spending my spare time at work building durable systems and workflows for my teammates. I brought GitHub into our process to make our research more reproducible and transparent. In 2017 I led the procurement of our first machine learning server, Microsoft Machine Learning Server, which ran Microsoft’s own distribution of R. That server became the backbone for the predictive models my team built for agency programs. Microsoft retired the product in 2022, and in 2023 I migrated our remaining production model to open-source R so it could keep running."
-  },
-  {
-    "objectID": "posts/welcome/index.html#what-i-work-on-now",
-    "href": "posts/welcome/index.html#what-i-work-on-now",
-    "title": "Hello, world",
-    "section": "What I work on now",
-    "text": "What I work on now\nToday I lead our team’s research infrastructure. I led the procurement of our Posit Team environment, which runs in Snowpark Container Services as a Snowflake Native App, and I’m its administrator. That modern, scalable platform now hosts the production models and APIs our team builds, including some of the work I’m proudest of. I hope to write about it here in more detail."
-  },
-  {
-    "objectID": "posts/welcome/index.html#off-the-clock",
-    "href": "posts/welcome/index.html#off-the-clock",
-    "title": "Hello, world",
-    "section": "Off the clock",
-    "text": "Off the clock\nOutside of work, I’m the lucky father of two young kids. When they aren’t keeping me busy with art projects, outdoor play, Fortnite matches and Minecraft builds, I love reading, creative writing and running tabletop RPGs. For more than a decade, I’ve had the good fortune of leading the same core group of friends through weekly adventures."
-  },
-  {
-    "objectID": "posts/welcome/index.html#what-youll-find-here",
-    "href": "posts/welcome/index.html#what-youll-find-here",
-    "title": "Hello, world",
-    "section": "What you’ll find here",
-    "text": "What you’ll find here\n\nTechnical: the platforms, pipelines and tools behind our work.\nGov data: what doing data work inside state government is really like.\nOff the clock: game sessions, worldbuilding and the technical tinkering I do in Foundry Virtual Tabletop (Foundry VTT).\n\nI’ll do my best to keep posts short, interesting and relevant. I’m glad you’re here, and I hope you find something worthwhile."
-  },
-  {
     "objectID": "posts/you-get-the-data-you-pay-for/index.html",
     "href": "posts/you-get-the-data-you-pay-for/index.html",
     "title": "You Get the Data You Pay For",
@@ -119,13 +84,6 @@
     "text": "What would help\nI don’t think the answer is a large new research operation in every program. Some smaller shifts would go a long way:\n\nStart with the question. Before collecting anything, write down what decision the data will inform and what you’d need to know to make it.\nBring research staff in early. An hour of consultation during design saves weeks of cleaning and reanalysis later, and can mean the difference between data that answers the question and data that can’t.\nBudget for data collection as part of the program. If an outcome matters enough to ask about, it matters enough to fund measuring it properly, including staff time and infrastructure.\nCollect less, but on purpose. A short, well-designed instrument that measures the right outcome beats a long survey that measures everything loosely.\nInvest in shared infrastructure. Validated forms, secure databases, and standard definitions benefit every program that uses them and make each new collection cheaper than the last.\n\nAdministrative data will always be the backbone of public-sector research, and it should be. It’s comprehensive, longitudinal, and already paid for. But if we want to know whether programs are actually improving people’s lives, we have to be willing to collect the data that question requires, and be honest about what that takes."
   },
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Not Missing at Random",
-    "section": "",
-    "text": "What Are You Going to Do With It?\n\n\n\nresearch\n\ndata linkage\n\npublic sector\n\n\n\n\nWhy ‘nice to know’ questions are the most expensive ones in research, and the one question that makes them better.\n\n\n\n\n\n\nNov 9, 2026\n\n\nAaron Cochran\n\n\n\n\n\n\n\n\n\n\n\n\nYou Get the Data You Pay For\n\n\n\ngovernment data\n\nresearch methods\n\ndata quality\n\n\n\n\nAdministrative data is what public-sector researchers work with because it exists, not because it answers our questions. Closing that gap starts with being honest about what purposeful data collection costs.\n\n\n\n\n\n\nNov 8, 2026\n\n\nAaron Cochran\n\n\n\n\n\n\n\n\n\n\n\n\nHello, world\n\n\n\nTechnical\n\nGov data\n\nOff the clock\n\n\n\n\nWho I am, what I work on, and what you’ll find here.\n\n\n\n\n\n\nNov 8, 2026\n\n\nAaron Cochran\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "contact.html",
     "href": "contact.html",
     "title": "Contact",
@@ -173,5 +131,47 @@
     "title": "What Are You Going to Do With It?",
     "section": "Why this matters",
     "text": "Why this matters\nTime spent chasing facts that lead nowhere is time not spent on the questions that could improve a program. A research team has limited capacity, and it’s worth protecting for the questions that matter.\nCuriosity is where most good questions start. The work is helping it find its way to something a program can act on."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Hello, world",
+    "section": "",
+    "text": "Welcome to my personal website. I’m Aaron Cochran, a Research Systems Specialist on an interagency research team in state government. Our work serves more than one agency."
+  },
+  {
+    "objectID": "posts/welcome/index.html#from-analyst-to-systems-builder",
+    "href": "posts/welcome/index.html#from-analyst-to-systems-builder",
+    "title": "Hello, world",
+    "section": "From analyst to systems builder",
+    "text": "From analyst to systems builder\nI’ve spent more than ten years in state government, and my role has changed a lot in that time. I started as a research analyst, leading interagency research projects with partners from other state agencies.\nAlong the way, I fell in love with the technical side of the job and started spending my spare time at work building durable systems and workflows for my teammates. I brought GitHub into our process to make our research more reproducible and transparent. In 2017 I led the procurement of our first machine learning server, Microsoft Machine Learning Server, which ran Microsoft’s own distribution of R. That server became the backbone for the predictive models my team built for agency programs. Microsoft retired the product in 2022, and in 2023 I migrated our remaining production model to open-source R so it could keep running."
+  },
+  {
+    "objectID": "posts/welcome/index.html#what-i-work-on-now",
+    "href": "posts/welcome/index.html#what-i-work-on-now",
+    "title": "Hello, world",
+    "section": "What I work on now",
+    "text": "What I work on now\nToday I lead our team’s research infrastructure. I led the procurement of our Posit Team environment, which runs in Snowpark Container Services as a Snowflake Native App, and I’m its administrator. That modern, scalable platform now hosts the production models and APIs our team builds, including some of the work I’m proudest of. I hope to write about it here in more detail."
+  },
+  {
+    "objectID": "posts/welcome/index.html#off-the-clock",
+    "href": "posts/welcome/index.html#off-the-clock",
+    "title": "Hello, world",
+    "section": "Off the clock",
+    "text": "Off the clock\nOutside of work, I’m the lucky father of two young kids. When they aren’t keeping me busy with art projects, outdoor play, Fortnite matches and Minecraft builds, I love reading, creative writing and running tabletop RPGs. For more than a decade, I’ve had the good fortune of leading the same core group of friends through weekly adventures."
+  },
+  {
+    "objectID": "posts/welcome/index.html#what-youll-find-here",
+    "href": "posts/welcome/index.html#what-youll-find-here",
+    "title": "Hello, world",
+    "section": "What you’ll find here",
+    "text": "What you’ll find here\n\nTechnical: the platforms, pipelines and tools behind our work.\nGov data: what doing data work inside state government is really like.\nOff the clock: game sessions, worldbuilding and the technical tinkering I do in Foundry Virtual Tabletop (Foundry VTT).\n\nI’ll do my best to keep posts short, interesting and relevant. I’m glad you’re here, and I hope you find something worthwhile."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Not Missing at Random",
+    "section": "",
+    "text": "What Are You Going to Do With It?\n\n\n\nresearch\n\ndata linkage\n\npublic sector\n\n\n\n\nWhy ‘nice to know’ questions are the most expensive ones in research, and the one question that makes them better.\n\n\n\n\n\n\nNov 9, 2026\n\n\nAaron Cochran\n\n\n\n\n\n\n\n\n\n\n\n\nYou Get the Data You Pay For\n\n\n\ngovernment data\n\nresearch methods\n\ndata quality\n\n\n\n\nAdministrative data is what public-sector researchers work with because it exists, not because it answers our questions. Closing that gap starts with being honest about what purposeful data collection costs.\n\n\n\n\n\n\nNov 8, 2026\n\n\nAaron Cochran\n\n\n\n\n\n\n\n\n\n\n\n\nHello, world\n\n\n\nTechnical\n\nGov data\n\nOff the clock\n\n\n\n\nWho I am, what I work on, and what you’ll find here.\n\n\n\n\n\n\nNov 8, 2026\n\n\nAaron Cochran\n\n\n\n\n\nNo matching items"
   }
 ]
