@@ -10,7 +10,7 @@
 <atom:link href="https://hypnotoadie.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Data infrastructure, governance and research tooling in state government — plus the occasional tabletop game.</description>
 <generator>quarto-1.11.9</generator>
-<lastBuildDate>Mon, 09 Nov 2026 08:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 09 Nov 2026 00:00:00 GMT</lastBuildDate>
 <item>
   <title>What Are You Going to Do With It?</title>
   <dc:creator>Aaron Cochran</dc:creator>
@@ -93,12 +93,12 @@
   <category>data linkage</category>
   <category>public sector</category>
   <guid>https://hypnotoadie.github.io/posts/cost-of-data-requests/</guid>
-  <pubDate>Mon, 09 Nov 2026 08:00:00 GMT</pubDate>
+  <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>You Get the Data You Pay For</title>
   <dc:creator>Aaron Cochran</dc:creator>
-  <link>https://hypnotoadie.github.io/posts/first-post/</link>
+  <link>https://hypnotoadie.github.io/posts/you-get-the-data-you-pay-for/</link>
   <description><![CDATA[ 
 
 
@@ -185,8 +185,8 @@
   <category>government data</category>
   <category>research methods</category>
   <category>data quality</category>
-  <guid>https://hypnotoadie.github.io/posts/first-post/</guid>
-  <pubDate>Sun, 08 Nov 2026 08:00:00 GMT</pubDate>
+  <guid>https://hypnotoadie.github.io/posts/you-get-the-data-you-pay-for/</guid>
+  <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Hello, world</title>
@@ -218,7 +218,6 @@
 <li><strong>Technical:</strong> the platforms, pipelines and tools behind our work.</li>
 <li><strong>Gov data:</strong> what doing data work inside state government is really like.</li>
 <li><strong>Off the clock:</strong> game sessions, worldbuilding and the technical tinkering I do in Foundry Virtual Tabletop (Foundry VTT).</li>
-<li><strong>Neurodivergence:</strong> what I’ve learned about working as a neurodivergent adult, and the strategies that help me thrive.</li>
 </ul>
 <p>I’ll do my best to keep posts short, interesting and relevant. I’m glad you’re here, and I hope you find something worthwhile.</p>
 
@@ -229,9 +228,8 @@
   <category>Technical</category>
   <category>Gov data</category>
   <category>Off the clock</category>
-  <category>Neurodivergence</category>
   <guid>https://hypnotoadie.github.io/posts/welcome/</guid>
-  <pubDate>Sun, 08 Nov 2026 08:00:00 GMT</pubDate>
+  <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

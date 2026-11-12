@@ -1,17 +1,17 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/blog.html",
     "items": [
       "/posts/cost-of-data-requests/index.html",
-      "/posts/first-post/index.html",
+      "/posts/you-get-the-data-you-pay-for/index.html",
       "/posts/welcome/index.html"
     ]
   },
   {
-    "listing": "/blog.html",
+    "listing": "/index.html",
     "items": [
       "/posts/cost-of-data-requests/index.html",
-      "/posts/first-post/index.html",
+      "/posts/you-get-the-data-you-pay-for/index.html",
       "/posts/welcome/index.html"
     ]
   }
