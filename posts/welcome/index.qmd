@@ -2,7 +2,7 @@
 title: "Hello, world"
 description: "Who I am, what I work on, and what you'll find here."
 date: 2026-11-08
-categories: [Technical, Gov data, Off the clock, Neurodivergence]
+categories: [Technical, Gov data, Off the clock]
 draft: false
 ---
 
@@ -27,7 +27,7 @@ Outside of work, I'm the lucky father of two young kids. When they aren't keepin
 - **Technical:** the platforms, pipelines and tools behind our work.
 - **Gov data:** what doing data work inside state government is really like.
 - **Off the clock:** game sessions, worldbuilding and the technical tinkering I do in Foundry Virtual Tabletop (Foundry VTT).
-- **Neurodivergence:** what I've learned about working as a neurodivergent adult, and the strategies that help me thrive.
+
 
 I'll do my best to keep posts short, interesting and relevant. I'm glad you're here, and I hope you find something worthwhile.
 
