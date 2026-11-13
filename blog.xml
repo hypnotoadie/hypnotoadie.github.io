@@ -9,8 +9,8 @@
 <link>https://hypnotoadie.github.io/blog.html</link>
 <atom:link href="https://hypnotoadie.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Data infrastructure, governance and research tooling in state government — plus the occasional tabletop game.</description>
-<generator>quarto-1.8.24</generator>
-<lastBuildDate>Mon, 09 Nov 2026 08:00:00 GMT</lastBuildDate>
+<generator>quarto-1.11.9</generator>
+<lastBuildDate>Mon, 09 Nov 2026 00:00:00 GMT</lastBuildDate>
 <item>
   <title>What Are You Going to Do With It?</title>
   <dc:creator>Aaron Cochran</dc:creator>
@@ -93,50 +93,7 @@
   <category>data linkage</category>
   <category>public sector</category>
   <guid>https://hypnotoadie.github.io/posts/cost-of-data-requests/</guid>
-  <pubDate>Mon, 09 Nov 2026 08:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Hello, world</title>
-  <dc:creator>Aaron Cochran</dc:creator>
-  <link>https://hypnotoadie.github.io/posts/welcome/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>Welcome to my personal website. I’m Aaron Cochran, a Research Systems Specialist on an interagency research team in state government. Our work serves more than one agency.</p>
-<section id="from-analyst-to-systems-builder" class="level2">
-<h2 class="anchored" data-anchor-id="from-analyst-to-systems-builder">From analyst to systems builder</h2>
-<p>I’ve spent more than ten years in state government, and my role has changed a lot in that time. I started as a research analyst, leading interagency research projects with partners from other state agencies.</p>
-<p>Along the way, I fell in love with the technical side of the job and started spending my spare time at work building durable systems and workflows for my teammates. I brought GitHub into our process to make our research more reproducible and transparent. In 2017 I led the procurement of our first machine learning server, Microsoft Machine Learning Server, which ran Microsoft’s own distribution of R. That server became the backbone for the predictive models my team built for agency programs. Microsoft retired the product in 2022, and in 2023 I migrated our remaining production model to open-source R so it could keep running.</p>
-</section>
-<section id="what-i-work-on-now" class="level2">
-<h2 class="anchored" data-anchor-id="what-i-work-on-now">What I work on now</h2>
-<p>Today I lead our team’s research infrastructure. I led the procurement of our Posit Team environment, which runs in Snowpark Container Services as a Snowflake Native App, and I’m its administrator. That modern, scalable platform now hosts the production models and APIs our team builds, including some of the work I’m proudest of. I hope to write about it here in more detail.</p>
-</section>
-<section id="off-the-clock" class="level2">
-<h2 class="anchored" data-anchor-id="off-the-clock">Off the clock</h2>
-<p>Outside of work, I’m the lucky father of two young kids. When they aren’t keeping me busy with art projects, outdoor play, Fortnite matches and Minecraft builds, I love reading, creative writing and running tabletop RPGs. For more than a decade, I’ve had the good fortune of leading the same core group of friends through weekly adventures.</p>
-</section>
-<section id="what-youll-find-here" class="level2">
-<h2 class="anchored" data-anchor-id="what-youll-find-here">What you’ll find here</h2>
-<ul>
-<li><strong>Technical:</strong> the platforms, pipelines and tools behind our work.</li>
-<li><strong>Gov data:</strong> what doing data work inside state government is really like.</li>
-<li><strong>Off the clock:</strong> game sessions, worldbuilding and the technical tinkering I do in Foundry Virtual Tabletop (Foundry VTT).</li>
-</ul>
-<p>I’ll do my best to keep posts short, interesting and relevant. I’m glad you’re here, and I hope you find something worthwhile.</p>
-
-
-</section>
-
- ]]></description>
-  <category>Technical</category>
-  <category>Gov data</category>
-  <category>Off the clock</category>
-  <guid>https://hypnotoadie.github.io/posts/welcome/</guid>
-  <pubDate>Sun, 08 Nov 2026 08:00:00 GMT</pubDate>
+  <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>You Get the Data You Pay For</title>
@@ -229,7 +186,50 @@
   <category>research methods</category>
   <category>data quality</category>
   <guid>https://hypnotoadie.github.io/posts/you-get-the-data-you-pay-for/</guid>
-  <pubDate>Sun, 08 Nov 2026 08:00:00 GMT</pubDate>
+  <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Hello, world</title>
+  <dc:creator>Aaron Cochran</dc:creator>
+  <link>https://hypnotoadie.github.io/posts/welcome/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Welcome to my personal website. I’m Aaron Cochran, a Research Systems Specialist on an interagency research team in state government. Our work serves more than one agency.</p>
+<section id="from-analyst-to-systems-builder" class="level2">
+<h2 class="anchored" data-anchor-id="from-analyst-to-systems-builder">From analyst to systems builder</h2>
+<p>I’ve spent more than ten years in state government, and my role has changed a lot in that time. I started as a research analyst, leading interagency research projects with partners from other state agencies.</p>
+<p>Along the way, I fell in love with the technical side of the job and started spending my spare time at work building durable systems and workflows for my teammates. I brought GitHub into our process to make our research more reproducible and transparent. In 2017 I led the procurement of our first machine learning server, Microsoft Machine Learning Server, which ran Microsoft’s own distribution of R. That server became the backbone for the predictive models my team built for agency programs. Microsoft retired the product in 2022, and in 2023 I migrated our remaining production model to open-source R so it could keep running.</p>
+</section>
+<section id="what-i-work-on-now" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-work-on-now">What I work on now</h2>
+<p>Today I lead our team’s research infrastructure. I led the procurement of our Posit Team environment, which runs in Snowpark Container Services as a Snowflake Native App, and I’m its administrator. That modern, scalable platform now hosts the production models and APIs our team builds, including some of the work I’m proudest of. I hope to write about it here in more detail.</p>
+</section>
+<section id="off-the-clock" class="level2">
+<h2 class="anchored" data-anchor-id="off-the-clock">Off the clock</h2>
+<p>Outside of work, I’m the lucky father of two young kids. When they aren’t keeping me busy with art projects, outdoor play, Fortnite matches and Minecraft builds, I love reading, creative writing and running tabletop RPGs. For more than a decade, I’ve had the good fortune of leading the same core group of friends through weekly adventures.</p>
+</section>
+<section id="what-youll-find-here" class="level2">
+<h2 class="anchored" data-anchor-id="what-youll-find-here">What you’ll find here</h2>
+<ul>
+<li><strong>Technical:</strong> the platforms, pipelines and tools behind our work.</li>
+<li><strong>Gov data:</strong> what doing data work inside state government is really like.</li>
+<li><strong>Off the clock:</strong> game sessions, worldbuilding and the technical tinkering I do in Foundry Virtual Tabletop (Foundry VTT).</li>
+</ul>
+<p>I’ll do my best to keep posts short, interesting and relevant. I’m glad you’re here, and I hope you find something worthwhile.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Off the clock</category>
+  <category>Technical</category>
+  <category>Gov data</category>
+  <guid>https://hypnotoadie.github.io/posts/welcome/</guid>
+  <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
