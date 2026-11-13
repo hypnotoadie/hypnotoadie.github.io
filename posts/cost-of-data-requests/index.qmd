@@ -26,8 +26,8 @@ In practice, the data a program needs usually lives in more than one system, bui
 
 Linking them in a way that holds up for research means a long series of decisions:
 
-- How do we decide two records are the same person?
-- What do we do when we're not sure?
+- How do I decide two records are the same person?
+- What do I do when I'm not sure?
 - Which definition of "active" are we using, and who agreed to it?
 - What are we allowed to combine, and under what protections?
 
@@ -35,7 +35,7 @@ None of those decisions is visible in the final number. All of them can change i
 
 ## The expensive question is the one with no decision attached
 
-Back to the moon. Suppose we spent weeks linking call logs to case records to measure "complexity," then found a lunar effect, or didn't. What would the program do differently on Monday?
+Back to the moon. Suppose I spent weeks linking call logs to case records to measure "complexity," then found a lunar effect, or didn't. What would the program do differently on Monday?
 
 The better question sits right underneath: *what drives the busy, complicated weeks, and can we plan for them?* That one has real answers. Maybe complex calls follow benefit notices, deadlines, or system changes. Those are things a program can staff, train, and communicate around.
 

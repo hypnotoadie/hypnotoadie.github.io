@@ -1,6 +1,7 @@
 ---
 title: "From \"Can We Share?\" to \"How Can We Share Safely?\""
 description: "Cross-agency data sharing in government is rarely blocked by technology. It's blocked by unclear ownership, legal folklore, and incentives that reward saying no. Here's what it would take to change that."
+date: 2026-11-08
 categories: [government data, data sharing, data governance]
 draft: true
 ---
