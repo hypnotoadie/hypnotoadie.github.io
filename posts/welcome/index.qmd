@@ -2,7 +2,7 @@
 title: "Hello, world"
 description: "Who I am, what I work on, and what you'll find here."
 date: 2026-11-08
-categories: [Technical, Gov data, Off the clock]
+categories: [Off the clock, Technical, Gov data]
 draft: false
 ---
 
