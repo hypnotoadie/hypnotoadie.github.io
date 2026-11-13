@@ -6,6 +6,8 @@
 // ---------- Global ----------
 body { line-height: 1.6; }
 h1, h2, h3, h4 { letter-spacing: -0.02em; font-weight: 600; }
+h2 { color: $ac-accent; }
+li::marker { color: $ac-accent; }
 .navbar { border-bottom: 1px solid $ac-line; }
 .navbar-brand .navbar-title { font-family: $headings-font-family; font-weight: 600; }
 .nav-footer { border-top: 1px solid $ac-line; font-family: $font-family-monospace; font-size: 0.8rem; }

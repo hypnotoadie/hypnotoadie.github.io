@@ -38,6 +38,7 @@ website:
 
 format:
   html:
+    include-in-header: analytics.html
     # The first theme listed is the default: dark first, light via the navbar toggle.
     theme:
       dark: [styles/dark.scss, styles/site.scss]
