@@ -14,7 +14,7 @@ That difference matters more than people expect.
 
 ## What administrative data is built to answer
 
-Benefit programs like SNAP and TANF, and services like child welfare, carry heavy federal reporting requirements. Those requirements largely decide what gets recorded, how it's defined, and how carefully it's checked. If a field feeds a federal report, it tends to be well defined and fairly complete. If it doesn't, it may be optional, free text, inconsistently used, or missing entirely.
+Public benefit programs and the services around them carry heavy federal reporting requirements. Those requirements largely decide what gets recorded, how it's defined, and how carefully it's checked. If a field feeds a federal report, it tends to be well defined and fairly complete. If it doesn't, it may be optional, free text, inconsistently used, or missing entirely.
 
 So administrative data is very good at questions like:
 
