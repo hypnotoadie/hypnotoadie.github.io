@@ -10,7 +10,7 @@
 <atom:link href="https://hypnotoadie.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Data infrastructure, governance and research tooling in state government — plus the occasional tabletop game.</description>
 <generator>quarto-1.11.9</generator>
-<lastBuildDate>Mon, 09 Nov 2026 08:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 09 Nov 2026 00:00:00 GMT</lastBuildDate>
 <item>
   <title>What Are You Going to Do With It?</title>
   <dc:creator>Aaron Cochran</dc:creator>
@@ -93,7 +93,7 @@
   <category>data linkage</category>
   <category>public sector</category>
   <guid>https://hypnotoadie.github.io/posts/cost-of-data-requests/</guid>
-  <pubDate>Mon, 09 Nov 2026 08:00:00 GMT</pubDate>
+  <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>You Get the Data You Pay For</title>
@@ -110,7 +110,7 @@
 <p>That difference matters more than people expect.</p>
 <section id="what-administrative-data-is-built-to-answer" class="level2">
 <h2 class="anchored" data-anchor-id="what-administrative-data-is-built-to-answer">What administrative data is built to answer</h2>
-<p>Benefit programs like SNAP and TANF, and services like child welfare, carry heavy federal reporting requirements. Those requirements largely decide what gets recorded, how it’s defined, and how carefully it’s checked. If a field feeds a federal report, it tends to be well defined and fairly complete. If it doesn’t, it may be optional, free text, inconsistently used, or missing entirely.</p>
+<p>Public benefit programs and the services around them carry heavy federal reporting requirements. Those requirements largely decide what gets recorded, how it’s defined, and how carefully it’s checked. If a field feeds a federal report, it tends to be well defined and fairly complete. If it doesn’t, it may be optional, free text, inconsistently used, or missing entirely.</p>
 <p>So administrative data is very good at questions like:</p>
 <ul>
 <li>How many people were served, and for how long?</li>
@@ -186,7 +186,7 @@
   <category>research methods</category>
   <category>data quality</category>
   <guid>https://hypnotoadie.github.io/posts/you-get-the-data-you-pay-for/</guid>
-  <pubDate>Sun, 08 Nov 2026 08:00:00 GMT</pubDate>
+  <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Hello, world</title>
@@ -229,7 +229,7 @@
   <category>Technical</category>
   <category>Gov data</category>
   <guid>https://hypnotoadie.github.io/posts/welcome/</guid>
-  <pubDate>Sun, 08 Nov 2026 08:00:00 GMT</pubDate>
+  <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
