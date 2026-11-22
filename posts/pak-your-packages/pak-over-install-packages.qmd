@@ -1,0 +1,90 @@
+---
+title: "Pak your packages"
+description: "Why I reach for pak::pak() first, and why other R users and researchers should too."
+date: 2026-11-18
+categories: [R, reproducibility, tooling]
+draft: false
+---
+
+Almost every R user learned the same first line: `install.packages("dplyr")`. It works, it's built into R, and nobody questions it. But if you do research in R, especially on shared servers, in containers, or on a team, there's a better default: [`pak`](https://pak.r-lib.org/).
+
+My rule is simple: **use `pak::pak()` for everyday installs, and keep `install.packages()` as the fallback that's always there.** Here's why.
+
+## It plans before it acts
+
+`install.packages()` installs as it goes. If something fails halfway through, like a dependency that won't compile or a version that conflicts, your library can end up half-updated, with some packages new and some old.
+
+`pak` works out the *entire* dependency plan first, then installs. If a plan can't be satisfied, it tells you **before** touching anything. For a researcher, that's the difference between "the install failed" and "my analysis environment is now broken in a way I don't understand."
+
+## It's faster
+
+`pak` downloads and installs packages in parallel and caches what it downloads. Installing a big set of packages, or rebuilding an environment you've built before, is noticeably quicker. That adds up when you're spinning up a new project, a container, or a CI job.
+
+## One syntax for every source
+
+Research code rarely lives only on CRAN. Without `pak` you end up juggling `install.packages()`, `remotes::install_github()`, and `BiocManager::install()`. With `pak`, it's one function:
+
+```r
+pak::pak(c(
+  "dplyr",                 # CRAN
+  "tidyverse/dplyr",       # GitHub
+  "tidyverse/dplyr#1234",  # a specific pull request
+  "bioc::DESeq2",          # Bioconductor
+  "dplyr@1.1.0",           # a pinned version
+  "local::."               # the package you're developing
+))
+```
+
+And inside a project with a `DESCRIPTION` file, `pak::pak()` with no arguments installs everything the project needs.
+
+## It knows about system libraries
+
+If you've ever watched `sf` or `xml2` fail on Linux with a wall of compiler errors, you know the pain: the R package needs a *system* library (GDAL, libxml2, etc.) that isn't installed.
+
+`pak` can tell you what's missing, and on supported Linux distributions it can install it for you:
+
+```r
+pak::pkg_sysreqs("sf")
+```
+
+This alone makes `pak` worth it for anyone building Docker images or working on a shared Linux server.
+
+## Upgrades are less surprising
+
+By default, `pak` only upgrades a dependency when it actually has to. You don't get a surprise round of upgrades, or a prompt asking you to pick from a numbered list, just because you installed one new package. Fewer unexpected changes mean fewer "it worked last week" moments.
+
+## It helps with reproducibility
+
+Reproducibility is the part researchers should care about most:
+
+- **Snapshots of CRAN.** Point `pak` at a dated snapshot from Posit Package Manager so everyone on a project gets the same package versions, often as pre-built binaries on Linux:
+
+  ```r
+  pak::repo_add(CRAN = "PPM@2026-01-01")
+  ```
+
+- **Lockfiles.** `pak::lockfile_create()` and `pak::lockfile_install()` record and restore an exact set of package versions.
+- **Works with renv.** If you already use `renv`, you can have it use `pak` to do its installs:
+
+  ```r
+  options(renv.config.pak.enabled = TRUE)
+  ```
+
+- **Explaining dependencies.** `pak::pkg_deps_tree("pkg")` shows the full dependency tree, and `pak::pkg_deps_explain("pkgA", "pkgB")` answers the classic question: *why on earth is this package being installed?*
+
+## When install.packages still wins
+
+`pak` isn't always the right tool:
+
+- **Locked-down or offline environments.** `install.packages()` ships with R; `pak` has to be installed first, and its solver can clash with unusual internal repositories.
+- **Minimal scripts and images**, where adding a dependency isn't worth it.
+- **When the solver says no.** `pak` is stricter. Occasionally it refuses a plan that `install.packages()` would push through anyway. Usually `pak` is right, but it's good to know the escape hatch exists.
+
+## Getting started
+
+```r
+install.packages("pak")   # one last time
+pak::pak("dplyr")
+```
+
+That's it. Try it on your next project. Once you've had an install stop *before* breaking your library instead of halfway through, it's hard to go back.
