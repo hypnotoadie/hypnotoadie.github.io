@@ -2,17 +2,19 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/pak-your-packages/pak-over-install-packages.html",
       "/posts/cost-of-data-requests/index.html",
-      "/posts/you-get-the-data-you-pay-for/index.html",
-      "/posts/welcome/index.html"
+      "/posts/welcome/index.html",
+      "/posts/you-get-the-data-you-pay-for/index.html"
     ]
   },
   {
     "listing": "/index.html",
     "items": [
+      "/posts/pak-your-packages/pak-over-install-packages.html",
       "/posts/cost-of-data-requests/index.html",
-      "/posts/you-get-the-data-you-pay-for/index.html",
-      "/posts/welcome/index.html"
+      "/posts/welcome/index.html",
+      "/posts/you-get-the-data-you-pay-for/index.html"
     ]
   }
 ]

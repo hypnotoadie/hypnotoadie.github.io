@@ -1,73 +1,10 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Not Missing at Random",
     "section": "",
-    "text": "I’m Aaron Cochran, a Research Systems Specialist on an interagency research team in state government. Our work serves more than one agency.\nIn practice that means I’m part data scientist, part platform administrator. I’m responsible for infrastructure, governance and research tooling: the systems researchers use to do careful work with sensitive data."
-  },
-  {
-    "objectID": "about.html#between-research-and-infrastructure",
-    "href": "about.html#between-research-and-infrastructure",
-    "title": "About",
-    "section": "Between research and infrastructure",
-    "text": "Between research and infrastructure\nI don’t sit firmly in one camp. I’m not purely a researcher, and I’m not purely an infrastructure engineer. I work in the space between them, where research needs systems that can actually support it.\nOn the infrastructure side, I build out the platforms our team works on, train staff to use them, set the standards we follow, and manage our GitHub. On the research side, I work directly with researchers to productionize their code, so that analysis can become something other people can run, rely on and use.\nThat position is part of why our work has shifted from delivering reports and papers to building research tools that put the research to use. We still write reports, but we publish them as HTML on Posit Connect so they’re accessible to staff who use screen readers. We also build simulations that help leadership and management weigh decisions before they make them."
-  },
-  {
-    "objectID": "about.html#what-i-work-on",
-    "href": "about.html#what-i-work-on",
-    "title": "About",
-    "section": "What I work on",
-    "text": "What I work on\n\nResearch platforms. Standing up and governing Posit Team on Snowflake: environments, access, promotion workflows and documentation.\nStandards and training. Developing the conventions our team works by and teaching staff how to use the tools.\nResearch tools and accessible publishing. Turning findings into things people can use: accessible HTML reports and simulations that support decisions.\nRecord linkage. Probabilistic matching and identity resolution across agencies, designed so data can be shared without over-sharing.\nModels in production. Moving models out of notebooks and into versioned, documented APIs with vetiver and plumber.\n\nI work in R (using Positron), with Python alongside, across Snowflake, SQL Server, GitHub, Databricks, AWS and Azure."
-  },
-  {
-    "objectID": "about.html#off-the-clock",
-    "href": "about.html#off-the-clock",
-    "title": "About",
-    "section": "Off the clock",
-    "text": "Off the clock\nI run tabletop RPGs, self-host the server my group plays on, and write about it here now and then. I’m also an avid PC gamer, hiker, photographer, and worldbuilder, and a very lucky husband and dad."
-  },
-  {
-    "objectID": "about.html#elsewhere",
-    "href": "about.html#elsewhere",
-    "title": "About",
-    "section": "Elsewhere",
-    "text": "Elsewhere\n\nGitHub: hypnotoadie\nLinkedIn: aaroncochran\nEmail: get in touch\n\nViews on this site are my own and not those of my employer."
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Hello, world",
-    "section": "",
-    "text": "Welcome to my personal website. I’m Aaron Cochran, a Research Systems Specialist on an interagency research team in state government. Our work serves more than one agency."
-  },
-  {
-    "objectID": "posts/welcome/index.html#from-analyst-to-systems-builder",
-    "href": "posts/welcome/index.html#from-analyst-to-systems-builder",
-    "title": "Hello, world",
-    "section": "From analyst to systems builder",
-    "text": "From analyst to systems builder\nI’ve spent more than ten years in state government, and my role has changed a lot in that time. I started as a research analyst, leading interagency research projects with partners from other state agencies.\nAlong the way, I fell in love with the technical side of the job and started spending my spare time at work building durable systems and workflows for my teammates. I brought GitHub into our process to make our research more reproducible and transparent. In 2017 I led the procurement of our first machine learning server, Microsoft Machine Learning Server, which ran Microsoft’s own distribution of R. That server became the backbone for the predictive models my team built for agency programs. Microsoft retired the product in 2022, and in 2023 I migrated our remaining production model to open-source R so it could keep running."
-  },
-  {
-    "objectID": "posts/welcome/index.html#what-i-work-on-now",
-    "href": "posts/welcome/index.html#what-i-work-on-now",
-    "title": "Hello, world",
-    "section": "What I work on now",
-    "text": "What I work on now\nToday I lead our team’s research infrastructure. I led the procurement of our Posit Team environment, which runs in Snowpark Container Services as a Snowflake Native App, and I’m its administrator. That modern, scalable platform now hosts the production models and APIs our team builds, including some of the work I’m proudest of. I hope to write about it here in more detail."
-  },
-  {
-    "objectID": "posts/welcome/index.html#off-the-clock",
-    "href": "posts/welcome/index.html#off-the-clock",
-    "title": "Hello, world",
-    "section": "Off the clock",
-    "text": "Off the clock\nOutside of work, I’m the lucky father of two young kids. When they aren’t keeping me busy with art projects, outdoor play, Fortnite matches and Minecraft builds, I love reading, creative writing and running tabletop RPGs. For more than a decade, I’ve had the good fortune of leading the same core group of friends through weekly adventures."
-  },
-  {
-    "objectID": "posts/welcome/index.html#what-youll-find-here",
-    "href": "posts/welcome/index.html#what-youll-find-here",
-    "title": "Hello, world",
-    "section": "What you’ll find here",
-    "text": "What you’ll find here\n\nTechnical: the platforms, pipelines and tools behind our work.\nGov data: what doing data work inside state government is really like.\nOff the clock: game sessions, worldbuilding and the technical tinkering I do in Foundry Virtual Tabletop (Foundry VTT).\n\nI’ll do my best to keep posts short, interesting and relevant. I’m glad you’re here, and I hope you find something worthwhile."
+    "text": "Pak your packages\n\n\n\nR\n\nreproducibility\n\ntooling\n\n\n\n\nWhy I reach for pak::pak() first, and why other R users and researchers should too.\n\n\n\n\n\n\nNov 18, 2026\n\n\nAaron Cochran\n\n\n\n\n\n\n\n\n\n\n\n\nWhat Are You Going to Do With It?\n\n\n\nresearch\n\ndata linkage\n\npublic sector\n\n\n\n\nWhy ‘nice to know’ questions are the most expensive ones in research, and the one question that makes them better.\n\n\n\n\n\n\nNov 9, 2026\n\n\nAaron Cochran\n\n\n\n\n\n\n\n\n\n\n\n\nHello, world\n\n\n\nOff the clock\n\nTechnical\n\nGov data\n\n\n\n\nWho I am, what I work on, and what you’ll find here.\n\n\n\n\n\n\nNov 8, 2026\n\n\nAaron Cochran\n\n\n\n\n\n\n\n\n\n\n\n\nYou Get the Data You Pay For\n\n\n\ngovernment data\n\nresearch methods\n\ndata quality\n\n\n\n\nAdministrative data is what public-sector researchers work with because it exists, not because it answers our questions. Closing that gap starts with being honest about what purposeful data collection costs.\n\n\n\n\n\n\nNov 8, 2026\n\n\nAaron Cochran\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/you-get-the-data-you-pay-for/index.html",
@@ -119,20 +56,6 @@
     "text": "What would help\nI don’t think the answer is a large new research operation in every program. Some smaller shifts would go a long way:\n\nStart with the question. Before collecting anything, write down what decision the data will inform and what you’d need to know to make it.\nBring research staff in early. An hour of consultation during design saves weeks of cleaning and reanalysis later, and can mean the difference between data that answers the question and data that can’t.\nBudget for data collection as part of the program. If an outcome matters enough to ask about, it matters enough to fund measuring it properly, including staff time and infrastructure.\nCollect less, but on purpose. A short, well-designed instrument that measures the right outcome beats a long survey that measures everything loosely.\nInvest in shared infrastructure. Validated forms, secure databases, and standard definitions benefit every program that uses them and make each new collection cheaper than the last.\n\nAdministrative data will always be the backbone of public-sector research, and it should be. It’s comprehensive, longitudinal, and already paid for. But if we want to know whether programs are actually improving people’s lives, we have to be willing to collect the data that question requires, and be honest about what that takes."
   },
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Not Missing at Random",
-    "section": "",
-    "text": "What Are You Going to Do With It?\n\n\n\nresearch\n\ndata linkage\n\npublic sector\n\n\n\n\nWhy ‘nice to know’ questions are the most expensive ones in research, and the one question that makes them better.\n\n\n\n\n\n\nNov 9, 2026\n\n\nAaron Cochran\n\n\n\n\n\n\n\n\n\n\n\n\nYou Get the Data You Pay For\n\n\n\ngovernment data\n\nresearch methods\n\ndata quality\n\n\n\n\nAdministrative data is what public-sector researchers work with because it exists, not because it answers our questions. Closing that gap starts with being honest about what purposeful data collection costs.\n\n\n\n\n\n\nNov 8, 2026\n\n\nAaron Cochran\n\n\n\n\n\n\n\n\n\n\n\n\nHello, world\n\n\n\nOff the clock\n\nTechnical\n\nGov data\n\n\n\n\nWho I am, what I work on, and what you’ll find here.\n\n\n\n\n\n\nNov 8, 2026\n\n\nAaron Cochran\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "I’m always happy to talk about public-sector data work, Posit and Snowflake platforms, record linkage, or anything I’ve written here.\n\n  Show my email address →\n\n\n  \n    Say hello\n    Email is the best way to reach me.\n  \n  …\n\nYou can also find me on GitHub and LinkedIn."
-  },
-  {
     "objectID": "posts/cost-of-data-requests/index.html",
     "href": "posts/cost-of-data-requests/index.html",
     "title": "What Are You Going to Do With It?",
@@ -173,5 +96,145 @@
     "title": "What Are You Going to Do With It?",
     "section": "Why this matters",
     "text": "Why this matters\nTime spent chasing facts that lead nowhere is time not spent on the questions that could improve a program. A research team has limited capacity, and it’s worth protecting for the questions that matter.\nCuriosity is where most good questions start. The work is helping it find its way to something a program can act on."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m Aaron Cochran, a Research Systems Specialist on an interagency research team in state government. Our work serves more than one agency.\nIn practice that means I’m part data scientist, part platform administrator. I’m responsible for infrastructure, governance and research tooling: the systems researchers use to do careful work with sensitive data."
+  },
+  {
+    "objectID": "about.html#between-research-and-infrastructure",
+    "href": "about.html#between-research-and-infrastructure",
+    "title": "About",
+    "section": "Between research and infrastructure",
+    "text": "Between research and infrastructure\nI don’t sit firmly in one camp. I’m not purely a researcher, and I’m not purely an infrastructure engineer. I work in the space between them, where research needs systems that can actually support it.\nOn the infrastructure side, I build out the platforms our team works on, train staff to use them, set the standards we follow, and manage our GitHub. On the research side, I work directly with researchers to productionize their code, so that analysis can become something other people can run, rely on and use.\nThat position is part of why our work has shifted from delivering reports and papers to building research tools that put the research to use. We still write reports, but we publish them as HTML on Posit Connect so they’re accessible to staff who use screen readers. We also build simulations that help leadership and management weigh decisions before they make them."
+  },
+  {
+    "objectID": "about.html#what-i-work-on",
+    "href": "about.html#what-i-work-on",
+    "title": "About",
+    "section": "What I work on",
+    "text": "What I work on\n\nResearch platforms. Standing up and governing Posit Team on Snowflake: environments, access, promotion workflows and documentation.\nStandards and training. Developing the conventions our team works by and teaching staff how to use the tools.\nResearch tools and accessible publishing. Turning findings into things people can use: accessible HTML reports and simulations that support decisions.\nRecord linkage. Probabilistic matching and identity resolution across agencies, designed so data can be shared without over-sharing.\nModels in production. Moving models out of notebooks and into versioned, documented APIs with vetiver and plumber.\n\nI work in R (using Positron), with Python alongside, across Snowflake, SQL Server, GitHub, Databricks, AWS and Azure."
+  },
+  {
+    "objectID": "about.html#off-the-clock",
+    "href": "about.html#off-the-clock",
+    "title": "About",
+    "section": "Off the clock",
+    "text": "Off the clock\nI run tabletop RPGs, self-host the server my group plays on, and write about it here now and then. I’m also an avid PC gamer, hiker, photographer, and worldbuilder, and a very lucky husband and dad."
+  },
+  {
+    "objectID": "about.html#elsewhere",
+    "href": "about.html#elsewhere",
+    "title": "About",
+    "section": "Elsewhere",
+    "text": "Elsewhere\n\nGitHub: hypnotoadie\nLinkedIn: aaroncochran\nEmail: get in touch\n\nViews on this site are my own and not those of my employer."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "I’m always happy to talk about public-sector data work, Posit and Snowflake platforms, record linkage, or anything I’ve written here.\n\n  Show my email address →\n\n\n  \n    Say hello\n    Email is the best way to reach me.\n  \n  …\n\nYou can also find me on GitHub and LinkedIn."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Hello, world",
+    "section": "",
+    "text": "Welcome to my personal website. I’m Aaron Cochran, a Research Systems Specialist on an interagency research team in state government. Our work serves more than one agency."
+  },
+  {
+    "objectID": "posts/welcome/index.html#from-analyst-to-systems-builder",
+    "href": "posts/welcome/index.html#from-analyst-to-systems-builder",
+    "title": "Hello, world",
+    "section": "From analyst to systems builder",
+    "text": "From analyst to systems builder\nI’ve spent more than ten years in state government, and my role has changed a lot in that time. I started as a research analyst, leading interagency research projects with partners from other state agencies.\nAlong the way, I fell in love with the technical side of the job and started spending my spare time at work building durable systems and workflows for my teammates. I brought GitHub into our process to make our research more reproducible and transparent. In 2017 I led the procurement of our first machine learning server, Microsoft Machine Learning Server, which ran Microsoft’s own distribution of R. That server became the backbone for the predictive models my team built for agency programs. Microsoft retired the product in 2022, and in 2023 I migrated our remaining production model to open-source R so it could keep running."
+  },
+  {
+    "objectID": "posts/welcome/index.html#what-i-work-on-now",
+    "href": "posts/welcome/index.html#what-i-work-on-now",
+    "title": "Hello, world",
+    "section": "What I work on now",
+    "text": "What I work on now\nToday I lead our team’s research infrastructure. I led the procurement of our Posit Team environment, which runs in Snowpark Container Services as a Snowflake Native App, and I’m its administrator. That modern, scalable platform now hosts the production models and APIs our team builds, including some of the work I’m proudest of. I hope to write about it here in more detail."
+  },
+  {
+    "objectID": "posts/welcome/index.html#off-the-clock",
+    "href": "posts/welcome/index.html#off-the-clock",
+    "title": "Hello, world",
+    "section": "Off the clock",
+    "text": "Off the clock\nOutside of work, I’m the lucky father of two young kids. When they aren’t keeping me busy with art projects, outdoor play, Fortnite matches and Minecraft builds, I love reading, creative writing and running tabletop RPGs. For more than a decade, I’ve had the good fortune of leading the same core group of friends through weekly adventures."
+  },
+  {
+    "objectID": "posts/welcome/index.html#what-youll-find-here",
+    "href": "posts/welcome/index.html#what-youll-find-here",
+    "title": "Hello, world",
+    "section": "What you’ll find here",
+    "text": "What you’ll find here\n\nTechnical: the platforms, pipelines and tools behind our work.\nGov data: what doing data work inside state government is really like.\nOff the clock: game sessions, worldbuilding and the technical tinkering I do in Foundry Virtual Tabletop (Foundry VTT).\n\nI’ll do my best to keep posts short, interesting and relevant. I’m glad you’re here, and I hope you find something worthwhile."
+  },
+  {
+    "objectID": "posts/pak-your-packages/pak-over-install-packages.html",
+    "href": "posts/pak-your-packages/pak-over-install-packages.html",
+    "title": "Pak your packages",
+    "section": "",
+    "text": "Almost every R user learned the same first line: install.packages(\"dplyr\"). It works, it’s built into R, and nobody questions it. But if you do research in R, especially on shared servers, in containers, or on a team, there’s a better default: pak.\nMy rule is simple: use pak::pak() for everyday installs, and keep install.packages() as the fallback that’s always there. Here’s why."
+  },
+  {
+    "objectID": "posts/pak-your-packages/pak-over-install-packages.html#it-plans-before-it-acts",
+    "href": "posts/pak-your-packages/pak-over-install-packages.html#it-plans-before-it-acts",
+    "title": "Pak your packages",
+    "section": "It plans before it acts",
+    "text": "It plans before it acts\ninstall.packages() installs as it goes. If something fails halfway through, like a dependency that won’t compile or a version that conflicts, your library can end up half-updated, with some packages new and some old.\npak works out the entire dependency plan first, then installs. If a plan can’t be satisfied, it tells you before touching anything. For a researcher, that’s the difference between “the install failed” and “my analysis environment is now broken in a way I don’t understand.”"
+  },
+  {
+    "objectID": "posts/pak-your-packages/pak-over-install-packages.html#its-faster",
+    "href": "posts/pak-your-packages/pak-over-install-packages.html#its-faster",
+    "title": "Pak your packages",
+    "section": "It’s faster",
+    "text": "It’s faster\npak downloads and installs packages in parallel and caches what it downloads. Installing a big set of packages, or rebuilding an environment you’ve built before, is noticeably quicker. That adds up when you’re spinning up a new project, a container, or a CI job."
+  },
+  {
+    "objectID": "posts/pak-your-packages/pak-over-install-packages.html#one-syntax-for-every-source",
+    "href": "posts/pak-your-packages/pak-over-install-packages.html#one-syntax-for-every-source",
+    "title": "Pak your packages",
+    "section": "One syntax for every source",
+    "text": "One syntax for every source\nResearch code rarely lives only on CRAN. Without pak you end up juggling install.packages(), remotes::install_github(), and BiocManager::install(). With pak, it’s one function:\npak::pak(c(\n  \"dplyr\",                 # CRAN\n  \"tidyverse/dplyr\",       # GitHub\n  \"tidyverse/dplyr#1234\",  # a specific pull request\n  \"bioc::DESeq2\",          # Bioconductor\n  \"dplyr@1.1.0\",           # a pinned version\n  \"local::.\"               # the package you're developing\n))\nAnd inside a project with a DESCRIPTION file, pak::pak() with no arguments installs everything the project needs."
+  },
+  {
+    "objectID": "posts/pak-your-packages/pak-over-install-packages.html#it-knows-about-system-libraries",
+    "href": "posts/pak-your-packages/pak-over-install-packages.html#it-knows-about-system-libraries",
+    "title": "Pak your packages",
+    "section": "It knows about system libraries",
+    "text": "It knows about system libraries\nIf you’ve ever watched sf or xml2 fail on Linux with a wall of compiler errors, you know the pain: the R package needs a system library (GDAL, libxml2, etc.) that isn’t installed.\npak can tell you what’s missing, and on supported Linux distributions it can install it for you:\npak::pkg_sysreqs(\"sf\")\nThis alone makes pak worth it for anyone building Docker images or working on a shared Linux server."
+  },
+  {
+    "objectID": "posts/pak-your-packages/pak-over-install-packages.html#upgrades-are-less-surprising",
+    "href": "posts/pak-your-packages/pak-over-install-packages.html#upgrades-are-less-surprising",
+    "title": "Pak your packages",
+    "section": "Upgrades are less surprising",
+    "text": "Upgrades are less surprising\nBy default, pak only upgrades a dependency when it actually has to. You don’t get a surprise round of upgrades, or a prompt asking you to pick from a numbered list, just because you installed one new package. Fewer unexpected changes mean fewer “it worked last week” moments."
+  },
+  {
+    "objectID": "posts/pak-your-packages/pak-over-install-packages.html#it-helps-with-reproducibility",
+    "href": "posts/pak-your-packages/pak-over-install-packages.html#it-helps-with-reproducibility",
+    "title": "Pak your packages",
+    "section": "It helps with reproducibility",
+    "text": "It helps with reproducibility\nReproducibility is the part researchers should care about most:\n\nSnapshots of CRAN. Point pak at a dated snapshot from Posit Package Manager so everyone on a project gets the same package versions, often as pre-built binaries on Linux:\npak::repo_add(CRAN = \"PPM@2026-01-01\")\nLockfiles. pak::lockfile_create() and pak::lockfile_install() record and restore an exact set of package versions.\nWorks with renv. If you already use renv, you can have it use pak to do its installs:\noptions(renv.config.pak.enabled = TRUE)\nExplaining dependencies. pak::pkg_deps_tree(\"pkg\") shows the full dependency tree, and pak::pkg_deps_explain(\"pkgA\", \"pkgB\") answers the classic question: why on earth is this package being installed?"
+  },
+  {
+    "objectID": "posts/pak-your-packages/pak-over-install-packages.html#when-install.packages-still-wins",
+    "href": "posts/pak-your-packages/pak-over-install-packages.html#when-install.packages-still-wins",
+    "title": "Pak your packages",
+    "section": "When install.packages still wins",
+    "text": "When install.packages still wins\npak isn’t always the right tool:\n\nLocked-down or offline environments. install.packages() ships with R; pak has to be installed first, and its solver can clash with unusual internal repositories.\nMinimal scripts and images, where adding a dependency isn’t worth it.\nWhen the solver says no. pak is stricter. Occasionally it refuses a plan that install.packages() would push through anyway. Usually pak is right, but it’s good to know the escape hatch exists."
+  },
+  {
+    "objectID": "posts/pak-your-packages/pak-over-install-packages.html#getting-started",
+    "href": "posts/pak-your-packages/pak-over-install-packages.html#getting-started",
+    "title": "Pak your packages",
+    "section": "Getting started",
+    "text": "Getting started\ninstall.packages(\"pak\")   # one last time\npak::pak(\"dplyr\")\nThat’s it. Try it on your next project. Once you’ve had an install stop before breaking your library instead of halfway through, it’s hard to go back."
   }
 ]
