@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Aaron Cochran">
-<meta name="dcterms.date" content="2026-11-08">
-<meta name="description" content="Administrative data is what public-sector researchers work with because it exists, not because it answers our questions. Closing that gap starts with being honest about what purposeful data collection costs.">
+<meta name="dcterms.date" content="2026-11-22">
+<meta name="description" content="Why I built an open-source, Star Trek LCARS-themed touchscreen calendar for our kitchen instead of buying one with a subscription.">
 
-<title>You Get the Data You Pay For – aaron cochran</title>
+<title>Computer, display family calendar – aaron cochran</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -51,8 +51,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d73632b6edfcf2cb5865c4f049755b27.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-956a389a56967a5c5afb97ce7c300aff.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-0a870f721683bd343a6246c975d8ae2d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-41c81e7cf8d83b0731275d962ed2c6b9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-951e898c8ca68e3f0bb56faa7f8c3819.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -84,9 +84,12 @@ ul.task-list li input[type="checkbox"] {
 <script data-goatcounter="https://hypnotoadie.goatcounter.com/count" async="" src="//gc.zgo.at/count.js"></script>
 
 
-<meta property="og:title" content="You Get the Data You Pay For – aaron cochran">
-<meta property="og:description" content="Administrative data is what public-sector researchers work with because it exists, not because it answers our questions. Closing that gap starts with being honest about what purposeful data collection costs.">
+<meta property="og:title" content="Computer, display family calendar – aaron cochran">
+<meta property="og:description" content="Why I built an open-source, Star Trek LCARS-themed touchscreen calendar for our kitchen instead of buying one with a subscription.">
+<meta property="og:image" content="https://hypnotoadie.github.io/posts/lcars-magicmirror/home.png">
 <meta property="og:site_name" content="aaron cochran">
+<meta property="og:image:height" content="1101">
+<meta property="og:image:width" content="1921">
 </head>
 
 <body class="nav-fixed quarto-dark"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
@@ -324,12 +327,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-administrative-data-is-built-to-answer" id="toc-what-administrative-data-is-built-to-answer" class="nav-link active" data-scroll-target="#what-administrative-data-is-built-to-answer">What administrative data is built to answer</a></li>
-  <li><a href="#what-quasi-experimental-methods-can-and-cant-do" id="toc-what-quasi-experimental-methods-can-and-cant-do" class="nav-link" data-scroll-target="#what-quasi-experimental-methods-can-and-cant-do">What quasi-experimental methods can and can’t do</a></li>
-  <li><a href="#purposeful-data-collection-has-real-costs" id="toc-purposeful-data-collection-has-real-costs" class="nav-link" data-scroll-target="#purposeful-data-collection-has-real-costs">Purposeful data collection has real costs</a></li>
-  <li><a href="#the-spreadsheet-problem" id="toc-the-spreadsheet-problem" class="nav-link" data-scroll-target="#the-spreadsheet-problem">The spreadsheet problem</a></li>
-  <li><a href="#why-this-keeps-happening" id="toc-why-this-keeps-happening" class="nav-link" data-scroll-target="#why-this-keeps-happening">Why this keeps happening</a></li>
-  <li><a href="#what-would-help" id="toc-what-would-help" class="nav-link" data-scroll-target="#what-would-help">What would help</a></li>
+  <li><a href="#why-i-built-it" id="toc-why-i-built-it" class="nav-link active" data-scroll-target="#why-i-built-it">Why I built it</a>
+  <ul class="collapse">
+  <li><a href="#i-didnt-want-another-subscription" id="toc-i-didnt-want-another-subscription" class="nav-link" data-scroll-target="#i-didnt-want-another-subscription">I didn’t want another subscription</a></li>
+  <li><a href="#i-believe-in-open-source" id="toc-i-believe-in-open-source" class="nav-link" data-scroll-target="#i-believe-in-open-source">I believe in open source</a></li>
+  <li><a href="#im-a-huge-star-trek-fan" id="toc-im-a-huge-star-trek-fan" class="nav-link" data-scroll-target="#im-a-huge-star-trek-fan">I’m a huge Star Trek fan</a></li>
+  </ul></li>
+  <li><a href="#what-it-does" id="toc-what-it-does" class="nav-link" data-scroll-target="#what-it-does">What it does</a></li>
+  <li><a href="#a-few-design-choices-im-happy-with" id="toc-a-few-design-choices-im-happy-with" class="nav-link" data-scroll-target="#a-few-design-choices-im-happy-with">A few design choices I’m happy with</a></li>
+  <li><a href="#things-i-learned-along-the-way" id="toc-things-i-learned-along-the-way" class="nav-link" data-scroll-target="#things-i-learned-along-the-way">Things I learned along the way</a></li>
+  <li><a href="#build-your-own" id="toc-build-your-own" class="nav-link" data-scroll-target="#build-your-own">Build your own</a></li>
   </ul>
 </nav>
     </div>
@@ -339,17 +346,19 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">You Get the Data You Pay For</h1>
+<h1 class="title">Computer, display family calendar</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">government data</div>
-    <div class="quarto-category">research methods</div>
-    <div class="quarto-category">data quality</div>
+    <div class="quarto-category">Off the clock</div>
+    <div class="quarto-category">Technical</div>
+    <div class="quarto-category">open source</div>
+    <div class="quarto-category">MagicMirror</div>
+    <div class="quarto-category">Raspberry Pi</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Administrative data is what public-sector researchers work with because it exists, not because it answers our questions. Closing that gap starts with being honest about what purposeful data collection costs.
+    Why I built an open-source, Star Trek LCARS-themed touchscreen calendar for our kitchen instead of buying one with a subscription.
   </div>
 </div>
 
@@ -366,7 +375,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 8, 2026</p>
+      <p class="date">November 22, 2026</p>
     </div>
   </div>
   
@@ -378,78 +387,71 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Most of the research I do in human services runs on administrative data. That isn’t because it’s the best data for the job. It’s because it’s the data that exists.</p>
-<p>Administrative data is a byproduct of running a program. Someone applies for benefits, a caseworker determines eligibility, a payment goes out, a case closes. Each step leaves a record, and those records pile up into a large, longitudinal, often linkable dataset that researchers like me are grateful to have. But none of it was collected to answer research questions. It was collected to run the program and to show the federal government that the program follows the rules.</p>
-<p>That difference matters more than people expect.</p>
-<section id="what-administrative-data-is-built-to-answer" class="level2">
-<h2 class="anchored" data-anchor-id="what-administrative-data-is-built-to-answer">What administrative data is built to answer</h2>
-<p>Benefit programs like SNAP and TANF, and services like child welfare, carry heavy federal reporting requirements. Those requirements largely decide what gets recorded, how it’s defined, and how carefully it’s checked. If a field feeds a federal report, it tends to be well defined and fairly complete. If it doesn’t, it may be optional, free text, inconsistently used, or missing entirely.</p>
-<p>So administrative data is very good at questions like:</p>
-<ul>
-<li>How many people were served, and for how long?</li>
-<li>Were eligibility decisions made on time?</li>
-<li>How much was paid out, and to whom?</li>
-</ul>
-<p>It is much weaker at the questions programs care about most:</p>
-<ul>
-<li>Are families more economically stable a year after they leave the program?</li>
-<li>Did a new service improve child well-being, or only shift when cases close?</li>
-<li>Which parts of the program make a difference, and for whom?</li>
-</ul>
-<p>These outcome questions often depend on things the system never captures: someone’s wellbeing, the stability of their housing, their experience with the program, what happened after they left. You can’t analyze a variable that was never recorded.</p>
+<p>There’s a screen in our kitchen that looks like it was pulled off the bridge of the <em>Enterprise-D</em>. It shows our family’s calendars, the weather, the kids’ chores and a rotating “crew log” of quotes and affirmations. You tap a panel to change screens, the same way the crew did on TV.</p>
+<p>It’s a Raspberry Pi, a touchscreen, and an open-source project called <a href="https://github.com/MagicMirrorOrg/MagicMirror">MagicMirror²</a>, wrapped in a theme I built to look like LCARS, the computer interface from <em>Star Trek: The Next Generation</em>. I’ve published it as <a href="https://github.com/hypnotoadie/MMM-LCARS">MMM-LCARS</a> so anyone can build their own.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="home.png" class="img-fluid figure-img" alt="An LCARS-style touchscreen showing six tiles labeled Month, Week, Agenda, Chores, Photos and House, framed by orange, purple and blue curved bars, with the title Family Calendar in the top right."></p>
+<figcaption>The home screen. Each panel opens a page; the LCARS frame, clock and “crew log” stay on every page.</figcaption>
+</figure>
+</div>
+<section id="why-i-built-it" class="level2">
+<h2 class="anchored" data-anchor-id="why-i-built-it">Why I built it</h2>
+<section id="i-didnt-want-another-subscription" class="level3">
+<h3 class="anchored" data-anchor-id="i-didnt-want-another-subscription">I didn’t want another subscription</h3>
+<p>Touchscreen family calendars are a whole product category now. They look nice, and they solve a real problem: a busy household needs one shared place to see who’s going where. But most of them follow the same model. You buy the hardware, and then the most useful features sit behind a monthly subscription.</p>
+<p>I didn’t like the idea of paying every month to see my own calendar on my own wall. Our calendars already live in Google and Outlook, and both will hand you a private iCal link. All a display needs to do is read those links and draw them nicely. That’s a job for a small computer I own, not a service I rent.</p>
 </section>
-<section id="what-quasi-experimental-methods-can-and-cant-do" class="level2">
-<h2 class="anchored" data-anchor-id="what-quasi-experimental-methods-can-and-cant-do">What quasi-experimental methods can and can’t do</h2>
-<p>When a randomized trial isn’t possible, which in public programs is most of the time, we turn to quasi-experimental designs: difference-in-differences, regression discontinuity, propensity score methods, interrupted time series, and similar tools. I use them often, and they are powerful. Applied carefully, they can get much closer to a causal estimate than a simple before-and-after comparison.</p>
-<p>But they have limits that no amount of statistical skill removes:</p>
+<section id="i-believe-in-open-source" class="level3">
+<h3 class="anchored" data-anchor-id="i-believe-in-open-source">I believe in open source</h3>
+<p>Most of my working life runs on open-source software, and I’m a big advocate for it. Open tools let you see how things work, fix what’s broken and build on what other people have already figured out.</p>
+<p>This project is a good example of that. MagicMirror² has a huge community of people writing modules for it. The month, week and agenda views use <a href="https://github.com/MMRIZE">MMRIZE</a>’s CalendarExt3 modules. Page switching comes from MMM-pages, the chores board from MMM-Chores, and the photo slideshow from MMM-BackgroundSlideshow. Weather comes from <a href="https://open-meteo.com/">Open-Meteo</a>, which doesn’t even need an API key. I wrote the LCARS frame, the home screen, the calendar filter and a handful of glue modules, but I was standing on a lot of other people’s work the whole time.</p>
+<p>So it felt right to give it back. The repo is MIT-licensed. Take it, change it, make it yours.</p>
+</section>
+<section id="im-a-huge-star-trek-fan" class="level3">
+<h3 class="anchored" data-anchor-id="im-a-huge-star-trek-fan">I’m a huge Star Trek fan</h3>
+<p>I’ve loved the look of LCARS for as long as I’ve watched <em>The Next Generation</em>. The rounded “elbows,” the bars of flat colour, the tall narrow type, the little blocks of meaningless numbers. Michael Okuda designed those screens to be cheap to produce and to feel like the future, and somehow they still do. Most “futuristic” interfaces from the late ’80s look dated now. LCARS looks like a touchscreen app.</p>
+<p>This fall I started watching TNG again from the beginning. Then, partway through, Patrick Stewart died. I miss him. Captain Picard was a model of a certain kind of leadership: calm, curious, principled, willing to listen to his crew and then make the call. Spending my evenings on the bridge with him made me want a little more of that world in the house. A family calendar where the info panel occasionally says “Make it so” or “Engage!” was the natural result.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="month.png" class="img-fluid figure-img" alt="An LCARS-style month calendar for November with day boxes outlined in purple, today highlighted in orange, small weather icons on upcoming days, and four calendar legend pills along the bottom bar."></p>
+<figcaption>The Month page, with the weather shown on each day and the calendar filter pills along the bottom.</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="what-it-does" class="level2">
+<h2 class="anchored" data-anchor-id="what-it-does">What it does</h2>
+<p>The full details are in the <a href="https://github.com/hypnotoadie/MMM-LCARS#readme">README</a>, but here’s the short version:</p>
 <ul>
-<li><strong>They can only estimate effects on outcomes that were measured.</strong> If the outcome a program cares about isn’t in the data, no design recovers it.</li>
-<li><strong>They depend on assumptions the data can’t always test.</strong> Parallel trends, no unmeasured confounding, a clean cutoff. Administrative data rarely holds the variables we’d need to check those assumptions properly.</li>
-<li><strong>They inherit every quality problem in the source data.</strong> A sophisticated model built on inconsistent records gives a precise-looking answer to a fuzzy question.</li>
+<li><strong>Tap-driven pages.</strong> A home screen with one panel per page: Month, Week, Agenda, Chores, Photos and House. Tap the header elbow on any page to go home. Nothing rotates on a timer, so the page you’re reading doesn’t change halfway through.</li>
+<li><strong>Three calendar views.</strong> A month grid, a Sunday-to-Saturday week with a “now” line, and an agenda split into <em>Now</em>, <em>Later today</em> and <em>Coming up</em>.</li>
+<li><strong>A tappable calendar filter.</strong> Pills along the bottom bar hide or show one person’s calendar on every view, then reset after 30 minutes so nobody walks up to a half-empty screen.</li>
+<li><strong>A chores board</strong> with one column per person. Kids tap a chore to tick it off.</li>
+<li><strong>A House page</strong> (optional) with Nest thermostat controls and live camera feeds.</li>
+<li><strong>A weather chip</strong> on every page that opens a 7-day and 12-hour forecast.</li>
 </ul>
-<p>Quasi-experimental methods help us get the most out of the data we have. They don’t replace data that was collected on purpose to answer a specific question.</p>
 </section>
-<section id="purposeful-data-collection-has-real-costs" class="level2">
-<h2 class="anchored" data-anchor-id="purposeful-data-collection-has-real-costs">Purposeful data collection has real costs</h2>
-<p>When a program wants to know whether it’s working, the natural next step is to collect new data: a survey, interviews, focus groups, a structured intake form. This is often the right move. What gets underestimated, almost everywhere in government, is what doing it well costs.</p>
-<p>Good data collection needs:</p>
-<ul>
-<li><strong>Planning.</strong> Defining the question, deciding what to measure, choosing a sample, and working out how the data will be analyzed <em>before</em> anything is collected. This is the step that most often gets skipped, and skipping it is the main reason surveys end up measuring satisfaction when the real question was impact.</li>
-<li><strong>Instrument design.</strong> Writing survey questions that are clear, unbiased, and actually measure the concept you care about takes training and testing. A question that seems obvious to the person writing it can mean three different things to respondents.</li>
-<li><strong>Privacy and ethics review.</strong> Human services data is sensitive. Consent, data sharing agreements, and protections for participants all take time and expertise.</li>
-<li><strong>Staffing.</strong> Someone has to recruit participants, follow up on non-response, manage the data, and analyze it. Qualitative work needs even more: facilitators, note-takers, transcription, and careful coding by people trained to do it.</li>
-<li><strong>Infrastructure.</strong> Data needs to be captured in systems that validate entries, restrict access, track changes, and connect to the rest of the analytic environment.</li>
-</ul>
-<p>None of this is exotic. It’s standard research practice. It just isn’t free, and it rarely appears in a program’s budget.</p>
+<section id="a-few-design-choices-im-happy-with" class="level2">
+<h2 class="anchored" data-anchor-id="a-few-design-choices-im-happy-with">A few design choices I’m happy with</h2>
+<p><strong>Colour <em>and</em> shape.</strong> Each calendar has its own colour, but also its own marker: a circle, square, triangle or diamond. LCARS is a very colour-heavy design, and I didn’t want the calendar to depend on colour alone. Anyone who has trouble telling peach from gold can still tell a square from a diamond.</p>
+<p><strong>Everything is a tap.</strong> MagicMirror was built for a mirror you look at, not a screen you touch. Most of my custom code is about turning it into something you interact with: the home tiles, the filter pills, the weather chip that opens a forecast and remembers which page to send you back to.</p>
+<p><strong>Expensive things only run when you’re looking.</strong> Camera feeds are the biggest load on a Raspberry Pi. They only stream while the House page is open, and they pause after five minutes without a tap.</p>
+<p><strong>The whole look is one class.</strong> Every LCARS style in the CSS hangs off a single <code>theme-lcars</code> class on the page. That kept the theme in one place and makes it easy to add another theme later. (A Cardassian theme is tempting.)</p>
 </section>
-<section id="the-spreadsheet-problem" class="level2">
-<h2 class="anchored" data-anchor-id="the-spreadsheet-problem">The spreadsheet problem</h2>
-<p>When the infrastructure isn’t there, people make do. Across government, a lot of program-level data collection happens in Excel. That isn’t carelessness. It’s what’s available, it’s familiar, and it gets the job done in the moment.</p>
-<p>But spreadsheets weren’t designed for data collection. There’s no validation on entry, so a date ends up typed three different ways. There’s no controlled vocabulary, so one category shows up under five spellings. Files get copied, renamed, and emailed around, so no one is sure which version is current. Columns change meaning partway through a year. By the time the data reaches an analyst, a large share of the effort goes into cleaning it, and some errors can’t be fixed because the information needed to fix them was never captured.</p>
-<p>These are system problems, not people problems. Give the same staff a well-designed form with validation and a shared database, and data quality improves right away.</p>
+<section id="things-i-learned-along-the-way" class="level2">
+<h2 class="anchored" data-anchor-id="things-i-learned-along-the-way">Things I learned along the way</h2>
+<p><strong>Your calendar’s private link is a password.</strong> The iCal “secret address” that Google and Outlook give you lets anyone who has it read your whole calendar. The repo ships with sample feeds and <code>CHANGE ME</code> markers, and the install steps <em>copy</em> the config instead of linking it, so your real links never end up in a git folder. If you build one of these, don’t commit your real config to a public repo.</p>
+<p><strong>Fixed layouts are a trade-off.</strong> LCARS depends on precise geometry, so the layout uses fixed pixel positions for a 1920×1080 screen. That made the frame look right, but it means other resolutions need CSS work. I’m fine with that for a kitchen display; it would be the wrong call for a website.</p>
+<p><strong>Frameworks have reserved words.</strong> MagicMirror modules quietly break if you name your own properties <code>hidden</code>, <code>data</code>, <code>config</code>, <code>name</code> or <code>identifier</code>, or your methods <code>show</code>, <code>hide</code>, <code>init</code> or <code>stop</code>. Nothing errors. Things just stop working in confusing ways. That one cost me an evening.</p>
+<p><strong>When a tap does nothing, something is on top of it.</strong> With this many fixed-position layers, an invisible element covering a button was the usual culprit. Running <code>document.elementFromPoint(x, y)</code> in the browser’s developer tools at the button’s position tells you exactly what’s catching the tap.</p>
 </section>
-<section id="why-this-keeps-happening" class="level2">
-<h2 class="anchored" data-anchor-id="why-this-keeps-happening">Why this keeps happening</h2>
-<p>It’s easy to read all of this as a criticism of the people doing the work. It isn’t. The program staff I work with care a great deal about the families they serve and want to know whether what they’re doing helps. The constraints are structural:</p>
-<ul>
-<li><strong>Funding follows compliance.</strong> Federal requirements come with deadlines and consequences. Evaluation usually doesn’t, so it’s often the first thing cut when budgets tighten.</li>
-<li><strong>Data collection is treated as overhead.</strong> It’s rarely budgeted as part of running a program, so it competes with direct services, and direct services almost always win.</li>
-<li><strong>Staff capacity is stretched thin.</strong> Teams running programs are often already at or past capacity. Designing and running a rigorous data collection effort on top of that isn’t realistic without dedicated support.</li>
-<li><strong>Research methods training isn’t part of most program roles.</strong> That’s reasonable. We don’t expect researchers to be eligibility experts either. But it means survey design and measurement often fall to people who were never given the tools for it.</li>
-</ul>
-<p>The result is a system very good at counting what it does and much less able to learn whether it’s working.</p>
-</section>
-<section id="what-would-help" class="level2">
-<h2 class="anchored" data-anchor-id="what-would-help">What would help</h2>
-<p>I don’t think the answer is a large new research operation in every program. Some smaller shifts would go a long way:</p>
-<ol type="1">
-<li><strong>Start with the question.</strong> Before collecting anything, write down what decision the data will inform and what you’d need to know to make it.</li>
-<li><strong>Bring research staff in early.</strong> An hour of consultation during design saves weeks of cleaning and reanalysis later, and can mean the difference between data that answers the question and data that can’t.</li>
-<li><strong>Budget for data collection as part of the program.</strong> If an outcome matters enough to ask about, it matters enough to fund measuring it properly, including staff time and infrastructure.</li>
-<li><strong>Collect less, but on purpose.</strong> A short, well-designed instrument that measures the right outcome beats a long survey that measures everything loosely.</li>
-<li><strong>Invest in shared infrastructure.</strong> Validated forms, secure databases, and standard definitions benefit every program that uses them and make each new collection cheaper than the last.</li>
-</ol>
-<p>Administrative data will always be the backbone of public-sector research, and it should be. It’s comprehensive, longitudinal, and already paid for. But if we want to know whether programs are actually improving people’s lives, we have to be willing to collect the data that question requires, and be honest about what that takes.</p>
+<section id="build-your-own" class="level2">
+<h2 class="anchored" data-anchor-id="build-your-own">Build your own</h2>
+<p>You’ll need a Raspberry Pi 4 (or any machine running MagicMirror²), a 1920×1080 touchscreen and an afternoon. The <a href="https://github.com/hypnotoadie/MMM-LCARS#readme">README</a> walks through installing the third-party modules, linking in the custom ones, plugging in your calendars and location, and, if you have Nest devices, setting up the House page. If you don’t, it explains how to remove that page.</p>
+<p>If you build one, I’d love to see it. And if you improve it, pull requests are welcome.</p>
+<p><em>This is a fan project. LCARS and Star Trek belong to their owners, and the project has no affiliation with them.</em></p>
+<p>Engage.</p>
 
 
 </section>
@@ -459,8 +461,8 @@ ul.task-list li input[type="checkbox"] {
 // Reveal-on-click email: the address is never present in the page source
 // as one string, which keeps most scrapers from harvesting it.
 (function () {
-  var user = ['aaron', 'c', 'cochran'].join('.');
-  var host = ['gmail', 'com'].join('.');
+  var user = ['aaroncochran'];
+  var host = ['mailfence', 'com'].join('.');
   function fill() {
     var addr = user + '@' + host;
     document.querySelectorAll('[data-ac-mail]').forEach(function (a) {

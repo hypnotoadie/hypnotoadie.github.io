@@ -10,7 +10,96 @@
 <atom:link href="https://hypnotoadie.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Data infrastructure, governance and research tooling in state government — plus the occasional tabletop game.</description>
 <generator>quarto-1.11.9</generator>
-<lastBuildDate>Wed, 18 Nov 2026 08:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 22 Nov 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Computer, display family calendar</title>
+  <dc:creator>Aaron Cochran</dc:creator>
+  <link>https://hypnotoadie.github.io/posts/lcars-magicmirror/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>There’s a screen in our kitchen that looks like it was pulled off the bridge of the <em>Enterprise-D</em>. It shows our family’s calendars, the weather, the kids’ chores and a rotating “crew log” of quotes and affirmations. You tap a panel to change screens, the same way the crew did on TV.</p>
+<p>It’s a Raspberry Pi, a touchscreen, and an open-source project called <a href="https://github.com/MagicMirrorOrg/MagicMirror">MagicMirror²</a>, wrapped in a theme I built to look like LCARS, the computer interface from <em>Star Trek: The Next Generation</em>. I’ve published it as <a href="https://github.com/hypnotoadie/MMM-LCARS">MMM-LCARS</a> so anyone can build their own.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hypnotoadie.github.io/posts/lcars-magicmirror/home.png" class="img-fluid figure-img" alt="An LCARS-style touchscreen showing six tiles labeled Month, Week, Agenda, Chores, Photos and House, framed by orange, purple and blue curved bars, with the title Family Calendar in the top right."></p>
+<figcaption>The home screen. Each panel opens a page; the LCARS frame, clock and “crew log” stay on every page.</figcaption>
+</figure>
+</div>
+<section id="why-i-built-it" class="level2">
+<h2 class="anchored" data-anchor-id="why-i-built-it">Why I built it</h2>
+<section id="i-didnt-want-another-subscription" class="level3">
+<h3 class="anchored" data-anchor-id="i-didnt-want-another-subscription">I didn’t want another subscription</h3>
+<p>Touchscreen family calendars are a whole product category now. They look nice, and they solve a real problem: a busy household needs one shared place to see who’s going where. But most of them follow the same model. You buy the hardware, and then the most useful features sit behind a monthly subscription.</p>
+<p>I didn’t like the idea of paying every month to see my own calendar on my own wall. Our calendars already live in Google and Outlook, and both will hand you a private iCal link. All a display needs to do is read those links and draw them nicely. That’s a job for a small computer I own, not a service I rent.</p>
+</section>
+<section id="i-believe-in-open-source" class="level3">
+<h3 class="anchored" data-anchor-id="i-believe-in-open-source">I believe in open source</h3>
+<p>Most of my working life runs on open-source software, and I’m a big advocate for it. Open tools let you see how things work, fix what’s broken and build on what other people have already figured out.</p>
+<p>This project is a good example of that. MagicMirror² has a huge community of people writing modules for it. The month, week and agenda views use <a href="https://github.com/MMRIZE">MMRIZE</a>’s CalendarExt3 modules. Page switching comes from MMM-pages, the chores board from MMM-Chores, and the photo slideshow from MMM-BackgroundSlideshow. Weather comes from <a href="https://open-meteo.com/">Open-Meteo</a>, which doesn’t even need an API key. I wrote the LCARS frame, the home screen, the calendar filter and a handful of glue modules, but I was standing on a lot of other people’s work the whole time.</p>
+<p>So it felt right to give it back. The repo is MIT-licensed. Take it, change it, make it yours.</p>
+</section>
+<section id="im-a-huge-star-trek-fan" class="level3">
+<h3 class="anchored" data-anchor-id="im-a-huge-star-trek-fan">I’m a huge Star Trek fan</h3>
+<p>I’ve loved the look of LCARS for as long as I’ve watched <em>The Next Generation</em>. The rounded “elbows,” the bars of flat colour, the tall narrow type, the little blocks of meaningless numbers. Michael Okuda designed those screens to be cheap to produce and to feel like the future, and somehow they still do. Most “futuristic” interfaces from the late ’80s look dated now. LCARS looks like a touchscreen app.</p>
+<p>This fall I started watching TNG again from the beginning. Then, partway through, Patrick Stewart died. I miss him. Captain Picard was a model of a certain kind of leadership: calm, curious, principled, willing to listen to his crew and then make the call. Spending my evenings on the bridge with him made me want a little more of that world in the house. A family calendar where the info panel occasionally says “Make it so” or “Engage!” was the natural result.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hypnotoadie.github.io/posts/lcars-magicmirror/month.png" class="img-fluid figure-img" alt="An LCARS-style month calendar for November with day boxes outlined in purple, today highlighted in orange, small weather icons on upcoming days, and four calendar legend pills along the bottom bar."></p>
+<figcaption>The Month page, with the weather shown on each day and the calendar filter pills along the bottom.</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="what-it-does" class="level2">
+<h2 class="anchored" data-anchor-id="what-it-does">What it does</h2>
+<p>The full details are in the <a href="https://github.com/hypnotoadie/MMM-LCARS#readme">README</a>, but here’s the short version:</p>
+<ul>
+<li><strong>Tap-driven pages.</strong> A home screen with one panel per page: Month, Week, Agenda, Chores, Photos and House. Tap the header elbow on any page to go home. Nothing rotates on a timer, so the page you’re reading doesn’t change halfway through.</li>
+<li><strong>Three calendar views.</strong> A month grid, a Sunday-to-Saturday week with a “now” line, and an agenda split into <em>Now</em>, <em>Later today</em> and <em>Coming up</em>.</li>
+<li><strong>A tappable calendar filter.</strong> Pills along the bottom bar hide or show one person’s calendar on every view, then reset after 30 minutes so nobody walks up to a half-empty screen.</li>
+<li><strong>A chores board</strong> with one column per person. Kids tap a chore to tick it off.</li>
+<li><strong>A House page</strong> (optional) with Nest thermostat controls and live camera feeds.</li>
+<li><strong>A weather chip</strong> on every page that opens a 7-day and 12-hour forecast.</li>
+</ul>
+</section>
+<section id="a-few-design-choices-im-happy-with" class="level2">
+<h2 class="anchored" data-anchor-id="a-few-design-choices-im-happy-with">A few design choices I’m happy with</h2>
+<p><strong>Colour <em>and</em> shape.</strong> Each calendar has its own colour, but also its own marker: a circle, square, triangle or diamond. LCARS is a very colour-heavy design, and I didn’t want the calendar to depend on colour alone. Anyone who has trouble telling peach from gold can still tell a square from a diamond.</p>
+<p><strong>Everything is a tap.</strong> MagicMirror was built for a mirror you look at, not a screen you touch. Most of my custom code is about turning it into something you interact with: the home tiles, the filter pills, the weather chip that opens a forecast and remembers which page to send you back to.</p>
+<p><strong>Expensive things only run when you’re looking.</strong> Camera feeds are the biggest load on a Raspberry Pi. They only stream while the House page is open, and they pause after five minutes without a tap.</p>
+<p><strong>The whole look is one class.</strong> Every LCARS style in the CSS hangs off a single <code>theme-lcars</code> class on the page. That kept the theme in one place and makes it easy to add another theme later. (A Cardassian theme is tempting.)</p>
+</section>
+<section id="things-i-learned-along-the-way" class="level2">
+<h2 class="anchored" data-anchor-id="things-i-learned-along-the-way">Things I learned along the way</h2>
+<p><strong>Your calendar’s private link is a password.</strong> The iCal “secret address” that Google and Outlook give you lets anyone who has it read your whole calendar. The repo ships with sample feeds and <code>CHANGE ME</code> markers, and the install steps <em>copy</em> the config instead of linking it, so your real links never end up in a git folder. If you build one of these, don’t commit your real config to a public repo.</p>
+<p><strong>Fixed layouts are a trade-off.</strong> LCARS depends on precise geometry, so the layout uses fixed pixel positions for a 1920×1080 screen. That made the frame look right, but it means other resolutions need CSS work. I’m fine with that for a kitchen display; it would be the wrong call for a website.</p>
+<p><strong>Frameworks have reserved words.</strong> MagicMirror modules quietly break if you name your own properties <code>hidden</code>, <code>data</code>, <code>config</code>, <code>name</code> or <code>identifier</code>, or your methods <code>show</code>, <code>hide</code>, <code>init</code> or <code>stop</code>. Nothing errors. Things just stop working in confusing ways. That one cost me an evening.</p>
+<p><strong>When a tap does nothing, something is on top of it.</strong> With this many fixed-position layers, an invisible element covering a button was the usual culprit. Running <code>document.elementFromPoint(x, y)</code> in the browser’s developer tools at the button’s position tells you exactly what’s catching the tap.</p>
+</section>
+<section id="build-your-own" class="level2">
+<h2 class="anchored" data-anchor-id="build-your-own">Build your own</h2>
+<p>You’ll need a Raspberry Pi 4 (or any machine running MagicMirror²), a 1920×1080 touchscreen and an afternoon. The <a href="https://github.com/hypnotoadie/MMM-LCARS#readme">README</a> walks through installing the third-party modules, linking in the custom ones, plugging in your calendars and location, and, if you have Nest devices, setting up the House page. If you don’t, it explains how to remove that page.</p>
+<p>If you build one, I’d love to see it. And if you improve it, pull requests are welcome.</p>
+<p><em>This is a fan project. LCARS and Star Trek belong to their owners, and the project has no affiliation with them.</em></p>
+<p>Engage.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Off the clock</category>
+  <category>Technical</category>
+  <category>open source</category>
+  <category>MagicMirror</category>
+  <category>Raspberry Pi</category>
+  <guid>https://hypnotoadie.github.io/posts/lcars-magicmirror/</guid>
+  <pubDate>Sun, 22 Nov 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://hypnotoadie.github.io/posts/lcars-magicmirror/home.png" medium="image" type="image/png" height="83" width="144"/>
+</item>
 <item>
   <title>Pak your packages</title>
   <dc:creator>Aaron Cochran</dc:creator>
@@ -153,7 +242,7 @@ font-style: inherit;">"dplyr"</span>)</span></code></pre></div></div>
   <category>reproducibility</category>
   <category>tooling</category>
   <guid>https://hypnotoadie.github.io/posts/pak-your-packages/pak-over-install-packages.html</guid>
-  <pubDate>Wed, 18 Nov 2026 08:00:00 GMT</pubDate>
+  <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>What Are You Going to Do With It?</title>
@@ -237,7 +326,50 @@ font-style: inherit;">"dplyr"</span>)</span></code></pre></div></div>
   <category>data linkage</category>
   <category>public sector</category>
   <guid>https://hypnotoadie.github.io/posts/cost-of-data-requests/</guid>
-  <pubDate>Mon, 09 Nov 2026 08:00:00 GMT</pubDate>
+  <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Hello, world</title>
+  <dc:creator>Aaron Cochran</dc:creator>
+  <link>https://hypnotoadie.github.io/posts/welcome/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Welcome to my personal website. I’m Aaron Cochran, a Research Systems Specialist on an interagency research team in state government. Our work serves more than one agency.</p>
+<section id="from-analyst-to-systems-builder" class="level2">
+<h2 class="anchored" data-anchor-id="from-analyst-to-systems-builder">From analyst to systems builder</h2>
+<p>I’ve spent more than ten years in state government, and my role has changed a lot in that time. I started as a research analyst, leading interagency research projects with partners from other state agencies.</p>
+<p>Along the way, I fell in love with the technical side of the job and started spending my spare time at work building durable systems and workflows for my teammates. I brought GitHub into our process to make our research more reproducible and transparent. In 2017 I led the procurement of our first machine learning server, Microsoft Machine Learning Server, which ran Microsoft’s own distribution of R. That server became the backbone for the predictive models my team built for agency programs. Microsoft retired the product in 2022, and in 2023 I migrated our remaining production model to open-source R so it could keep running.</p>
+</section>
+<section id="what-i-work-on-now" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-work-on-now">What I work on now</h2>
+<p>Today I lead our team’s research infrastructure. I led the procurement of our Posit Team environment, which runs in Snowpark Container Services as a Snowflake Native App, and I’m its administrator. That modern, scalable platform now hosts the production models and APIs our team builds, including some of the work I’m proudest of. I hope to write about it here in more detail.</p>
+</section>
+<section id="off-the-clock" class="level2">
+<h2 class="anchored" data-anchor-id="off-the-clock">Off the clock</h2>
+<p>Outside of work, I’m the lucky father of two young kids. When they aren’t keeping me busy with art projects, outdoor play, Fortnite matches and Minecraft builds, I love reading, creative writing and running tabletop RPGs. For more than a decade, I’ve had the good fortune of leading the same core group of friends through weekly adventures.</p>
+</section>
+<section id="what-youll-find-here" class="level2">
+<h2 class="anchored" data-anchor-id="what-youll-find-here">What you’ll find here</h2>
+<ul>
+<li><strong>Technical:</strong> the platforms, pipelines and tools behind our work.</li>
+<li><strong>Gov data:</strong> what doing data work inside state government is really like.</li>
+<li><strong>Off the clock:</strong> game sessions, worldbuilding and the technical tinkering I do in Foundry Virtual Tabletop (Foundry VTT).</li>
+</ul>
+<p>I’ll do my best to keep posts short, interesting and relevant. I’m glad you’re here, and I hope you find something worthwhile.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>off the clock</category>
+  <category>technical</category>
+  <category>gov data</category>
+  <guid>https://hypnotoadie.github.io/posts/welcome/</guid>
+  <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>You Get the Data You Pay For</title>
@@ -330,50 +462,7 @@ font-style: inherit;">"dplyr"</span>)</span></code></pre></div></div>
   <category>research methods</category>
   <category>data quality</category>
   <guid>https://hypnotoadie.github.io/posts/you-get-the-data-you-pay-for/</guid>
-  <pubDate>Sun, 08 Nov 2026 08:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Hello, world</title>
-  <dc:creator>Aaron Cochran</dc:creator>
-  <link>https://hypnotoadie.github.io/posts/welcome/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>Welcome to my personal website. I’m Aaron Cochran, a Research Systems Specialist on an interagency research team in state government. Our work serves more than one agency.</p>
-<section id="from-analyst-to-systems-builder" class="level2">
-<h2 class="anchored" data-anchor-id="from-analyst-to-systems-builder">From analyst to systems builder</h2>
-<p>I’ve spent more than ten years in state government, and my role has changed a lot in that time. I started as a research analyst, leading interagency research projects with partners from other state agencies.</p>
-<p>Along the way, I fell in love with the technical side of the job and started spending my spare time at work building durable systems and workflows for my teammates. I brought GitHub into our process to make our research more reproducible and transparent. In 2017 I led the procurement of our first machine learning server, Microsoft Machine Learning Server, which ran Microsoft’s own distribution of R. That server became the backbone for the predictive models my team built for agency programs. Microsoft retired the product in 2022, and in 2023 I migrated our remaining production model to open-source R so it could keep running.</p>
-</section>
-<section id="what-i-work-on-now" class="level2">
-<h2 class="anchored" data-anchor-id="what-i-work-on-now">What I work on now</h2>
-<p>Today I lead our team’s research infrastructure. I led the procurement of our Posit Team environment, which runs in Snowpark Container Services as a Snowflake Native App, and I’m its administrator. That modern, scalable platform now hosts the production models and APIs our team builds, including some of the work I’m proudest of. I hope to write about it here in more detail.</p>
-</section>
-<section id="off-the-clock" class="level2">
-<h2 class="anchored" data-anchor-id="off-the-clock">Off the clock</h2>
-<p>Outside of work, I’m the lucky father of two young kids. When they aren’t keeping me busy with art projects, outdoor play, Fortnite matches and Minecraft builds, I love reading, creative writing and running tabletop RPGs. For more than a decade, I’ve had the good fortune of leading the same core group of friends through weekly adventures.</p>
-</section>
-<section id="what-youll-find-here" class="level2">
-<h2 class="anchored" data-anchor-id="what-youll-find-here">What you’ll find here</h2>
-<ul>
-<li><strong>Technical:</strong> the platforms, pipelines and tools behind our work.</li>
-<li><strong>Gov data:</strong> what doing data work inside state government is really like.</li>
-<li><strong>Off the clock:</strong> game sessions, worldbuilding and the technical tinkering I do in Foundry Virtual Tabletop (Foundry VTT).</li>
-</ul>
-<p>I’ll do my best to keep posts short, interesting and relevant. I’m glad you’re here, and I hope you find something worthwhile.</p>
-
-
-</section>
-
- ]]></description>
-  <category>Off the clock</category>
-  <category>Technical</category>
-  <category>Gov data</category>
-  <guid>https://hypnotoadie.github.io/posts/welcome/</guid>
-  <pubDate>Sun, 08 Nov 2026 08:00:00 GMT</pubDate>
+  <pubDate>Sun, 08 Nov 2026 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
